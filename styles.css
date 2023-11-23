@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 body {
@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-    display:grid;
+    display: grid;
     grid-template-columns: 55% 45%;
     height: 100vh;
    
@@ -29,9 +29,8 @@ body {
     width: 35%;
 }
 .sign-div h2{
-    margin-top: 50px;
-    /* margin-bottom: px; */
-    font-family:'Poppins',sans-serif ;
+    margin-top: 50px
+    font-family:'Poppins', sans-serif ;
     font-size: 40px;
     font-weight: 500;
     padding: 10px;
@@ -44,7 +43,7 @@ body {
     
 }
 .sign-div #have-acc{
-    font-family:'Poppins',sans-serif ;
+    font-family:'Poppins', sans-serif ;
     font-size: 16px;
     padding: 10px;
     text-decoration: none;
@@ -58,7 +57,7 @@ body {
     }
 
 .sign-div label{
-    font-family:'Poppins',sans-serif ;
+    font-family:'Poppins', sans-serif ;
     font-size: 15px;
     font-weight: 500;
     cursor: pointer;
