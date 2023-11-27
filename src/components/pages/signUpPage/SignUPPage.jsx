@@ -74,10 +74,11 @@ const SignUPPage = () => {
                 >
                   {isSubmitting ? "Signing Up..." : "Sign Up"}
                 </button>
-                <div>
-                  <input type="checkbox" className="checkbox"/>
-                  By continuing, you agree with our Terms & Conditions
-                </div>
+                  <label class="container">By continuing, you agree with our Terms & Conditions
+  <input type="checkbox" />
+  <span class="checkmark"></span>
+</label>
+               
                 <p className="signIn">
                   Do have an account?{" "}
                   <Link to="/sign-in" className="signUpPage-sign_btn">
