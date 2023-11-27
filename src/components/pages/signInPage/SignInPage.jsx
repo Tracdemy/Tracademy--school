@@ -1,33 +1,58 @@
-import React from "react";
+import React, { useState } from "react";
 import signInImg from "./assets/cuate.png";
 import "./SignInPage.css";
 import logoImg from "./assets/Group 67.png";
-import { Link } from "react-router-dom";
-import googleImg from "./assets/image 19 (1).png"
-
+import googleImg from "./assets/image 19 (1).png";
+import { Link, useNavigate } from "react-router-dom";
+import {
+  signInWithPopup,
+  getAuth,
+  provider,
+} from "../../firebase";
 const SignInPage = () => {
+
+  const navigate = useNavigate()
+  //States
+  const [error, setError] = useState("")
+  const handleGoogleSignIn = async () => {
+    const auth = getAuth();
+    await signInWithPopup(auth, provider)
+    signInWithPopup(auth, provider)
+      .then((result) => {
+        const user = result.user;
+        console.log("User signed in:", user);
+        navigate("/student-dashboard")
+      })
+      .catch((error) => {
+        // Handle sign-in errors
+        console.error("Error signing in:", error);
+        setError(error)
+      });
+  };
+
   return (
     <div className="signUpPage-wrapper">
       <div className="signUpPage-flex_row">
         <div className="left-content">
+       
           <img src={logoImg} alt="logo" className="signUp-logo" />
           <h2 className="signUpPage-title">Welcome back</h2>
           <p className="signUpPage-details">Please enter your details</p>
-        <button type="submit" className="submit-btn">
-         <img src={googleImg} alt="img" className="googleImg" /> Sign In with Google
-        </button>
-        <label class="container">
-          By continuing, you agree with our Terms & Conditions
-          <input type="checkbox" />
-          <span class="checkmark"></span>
-        </label>
-
-        <p className="signIn">
-          Are you an Admin?{" "}
-          <Link to="/sign-in" className="signUpPage-sign_btn">
-            Sign In
-          </Link>
-        </p>
+          <button type="button" className="submit-btn" onClick={handleGoogleSignIn}>
+            <img src={googleImg} alt="Google" className="googleImg" />
+            Sign In with Google
+          </button>
+          <label className="container">
+            By continuing, you agree with our Terms & Conditions
+            <input type="checkbox" />
+            <span className="checkmark"></span>
+          </label>
+          <p className="signIn">
+            Are you an Admin?{" "}
+            <Link to="/sign-in" className="signUpPage-sign_btn">
+              Sign In
+            </Link>
+          </p>
         </div>
       </div>
       <div className="right-content">
@@ -38,11 +63,7 @@ const SignInPage = () => {
           <p className="right-content-title2">
             All in <span className="onePlace">one place</span>
           </p>
-          <img
-            src={signInImg}
-            alt="school records"
-            className="school-records-img"
-          />
+          <img src={signInImg} alt="school records" className="school-records-img" />
         </div>
       </div>
     </div>
