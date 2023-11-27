@@ -1,0 +1,245 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background:#fff;
+    color: #000;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    height: 100vh;
+   
+}
+.sign-div{
+    height: 100vh;
+    padding:10px;
+    text-align: center;
+    align-items: center;
+    
+}
+.logo{
+    display: grid;
+    padding: 20px;
+    margin: 20px auto;
+    width: 35%;
+}
+.sign-div h2{
+    margin-top: 50px
+    font-family:'Poppins', sans-serif ;
+    font-size: 40px;
+    font-weight: 500;
+    padding: 10px;
+    text-align: center;
+}
+
+.sign-div , #enter{
+    font: 400;
+    margin: 10px;
+    
+}
+.sign-div #have-acc{
+    font-family:'Poppins', sans-serif ;
+    font-size: 16px;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    
+    }
+.sign-div #have-acc a{
+        text-decoration: none;
+        color: #000;
+    }
+
+.sign-div label{
+    font-family:'Poppins', sans-serif ;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+
+
+} 
+
+input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    border: 2px #000;
+    border-radius: 20px;
+    position: relative;
+    top: 3px;
+
+    }
+input[type="checkbox"]:checked{
+    background-color: #2196F3;
+    border: 1px solid #2196F3;
+    }
+
+    .terms a{
+    color: #000;
+    
+    }
+
+.sign-div button{
+    font-family:'Poppins',sans-serif;
+    font-weight: 500;
+    padding:10px 160px;
+    margin: 10px;
+    background: transparent;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.sign-div button:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,205,0.2), 0 6px 20px 0 rgba(0,0,127,0.19);
+}
+/* second div signup dis */
+.signup-display{
+    background-color: #3527D6;
+}
+.signup-display h2{
+    margin-top: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+}
+.signup-display .focus-head{
+    position: relative;
+    top: -70px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    /* padding: 5px; */
+}
+.signup-display .avatar {
+    width: 80%;
+    position: relative;
+    top: 8px;
+    left: 15px;
+}
+.h2-focus{
+    background:#FBFEFF;
+    color: #3527D6;
+    padding: auto 5px;
+    border-radius: 4px;
+
+}
+.signup-display .elipse {
+    width: 30%;
+    position: relative;
+    top: 16px;
+    left: 262px;
+
+}
+.one{
+    position: relative;
+    left: 5px;
+}
+/* media Query-------------------------------- */
+/* For small screen */
+@media only screen and (max-width:600px){
+.container {
+    display:block;
+    height: 100vh;
+    width: auto;
+    background-color: #3527D6;
+    color: #FBFEFF;
+    align-items: center;
+}
+.signup{
+    display:block;
+    /* grid-area:span; */
+    align-items: center;
+    text-align: center;
+    background-color: #3527D6;
+    color: #FBFEFF;
+}
+.logo{
+    width: 80%;
+    align-items: center;
+    color: #FBFEFF;
+}
+.signup-display h2{
+    display:ruby;
+}
+.sign-div h2{
+    font-size: 20px;
+    font-family: 'poppins' sans-serif;
+}
+.sign-div button{
+    background-color:#FBFEFF; /* Green */
+    border: 2px solid #000;
+    color:#000;
+    padding: 8px 50px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px 2px;
+    cursor: pointer;
+  }
+  .sign-div #have-acc{
+    font-family:'Poppins',sans-serif ;
+    font-size: 14px;
+    padding: 10px;
+    text-decoration: none;
+
+  }
+  .sign-div label{
+    font-family:'Poppins',sans-serif ;
+    font-size: 10px;
+    font-weight: 500;
+    cursor: pointer;
+
+} 
+.sign-div #have-acc a{
+    text-decoration: none;
+    color:#FBFEFF;
+}
+input[type="checkbox"]{
+    width: 12px;
+    height: 12px;
+    border: 2px #000;
+    border-radius: 20px;
+    position: relative;
+    top: 3px;
+    }
+input[type="checkbox"]:checked{
+    background-color:#FBFEFF;
+    border: 1px solid #FBFEFF;
+    }
+
+    .terms a{
+    color:#FBFEFF;
+    
+    }
+
+
+
+
+
+
+    /* font-family:'Poppins',sans-serif;
+    font-weight: 500;
+    padding:2px 80px;
+    margin: 10px;
+    background: transparent;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
+    .signup-display{
+        display: none;
+        }
+        
+}
