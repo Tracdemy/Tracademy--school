@@ -1,11 +1,11 @@
 import React from 'react'
 import "./Home.css"
-import SignUPPage from '../signUpPage/SignUPPage'
+import SignInPage from '../signInPage/SignInPage'
 const Home = () => {
   return (
     <div className='homeWrapper'>
         <div className='homeContents'>
-        <SignUPPage />
+        <SignInPage />
         </div>
     </div>
   )
