@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import signInImg from "./assets/cuate.png";
-import "./SignInPage.css";
+import "./AdminSignInPage.css";
 import logoImg from "./assets/Group 67.png";
 import googleImg from "./assets/image 19 (1).png";
 import { Link, useNavigate } from "react-router-dom";
@@ -9,7 +9,7 @@ import {
   getAuth,
   provider,
 } from "../../firebase";
-const SignInPage = () => {
+const AdminSignInPage = () => {
 
   const navigate = useNavigate()
   //States
@@ -21,7 +21,7 @@ const SignInPage = () => {
       .then((result) => {
         const user = result.user;
         console.log("User signed in:", user);
-        navigate("/student-dashboard")
+        navigate("/admin-dashboard")
       })
       .catch((error) => {
         // Handle sign-in errors
@@ -48,8 +48,8 @@ const SignInPage = () => {
             <span className="checkmark"></span>
           </label>
           <p className="signIn">
-            Are you an Admin?{" "}
-            <Link to="/admin-sign-in" className="signUpPage-sign_btn">
+            Are you a Student?{" "}
+            <Link to="/" className="signUpPage-sign_btn">
               Sign In
             </Link>
           </p>
@@ -70,4 +70,4 @@ const SignInPage = () => {
   );
 };
 
-export default SignInPage;
+export default AdminSignInPage;
