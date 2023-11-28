@@ -1,10 +1,11 @@
 import React from 'react'
 import "./Home.css"
+import SignInPage from '../signInPage/SignInPage'
 const Home = () => {
   return (
     <div className='homeWrapper'>
         <div className='homeContents'>
-        Home
+        <SignInPage />
         </div>
     </div>
   )
