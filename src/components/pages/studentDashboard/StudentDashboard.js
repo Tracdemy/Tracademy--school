@@ -8,6 +8,7 @@ import Logout from "../../logout/Logout.jsx";
 import CalanderDetails from "../../calander-details/CalanderDetails.jsx";
 import Assignment from "../../assignment/Assignment.jsx";
 import Calendar from "../../calendar/Calendar.jsx";
+// import StudentComponent from "../../student-component/StudentComponent.jsx";
 const StudentDashboard = () => {
   return (
     <div className="mx-3 md:mx-10 my-2 ">
@@ -18,7 +19,7 @@ const StudentDashboard = () => {
           <NoticeBar />
           <Logout />
         </div>
-        <div>Body</div>
+        <div>{/* <StudentComponent /> */}</div>
         <div>
           <Calendar />
           <CalanderDetails />
