@@ -1,0 +1,9 @@
+.lappy {
+  width: 380px;
+}
+
+@media screen and (max-width: 1020px) {
+  .lappy {
+    width: 330px;
+  }
+}

@@ -24,9 +24,9 @@ function PersonalInformation() {
         </div>
         <div>
           <h3 className="text-[#3527D6]">Student Details</h3>
-          <table className="text-[14px]">
+          <table className="text-[14px] border-spacing-2">
             <tbody>
-              <tr>
+              <tr className="h-[40px]">
                 <td>Class</td>
                 <td>:</td>
                 <td>{personalInfo.class}</td>
@@ -87,8 +87,8 @@ function PersonalInformation() {
         <div className="my-4">
           <h2 className="text-[#3527D6]">About Student</h2>
           <p className="text-[12px]">
-            Hello, My name is Bolanle Ayienitaju, a JSS2 student at RHS. I love
-            history, arts and reading{" "}
+            Hello, My name is {personalInfo.name}, a {personalInfo.class}{" "}
+            student at RHS. I love history, arts and reading{" "}
           </p>
         </div>
         <div>
@@ -101,7 +101,8 @@ function PersonalInformation() {
 
             <li>
               <span className="border-l border-black bg-black rounded-full inline-block w-2 h-2 mr-2"></span>
-              Neatest girl in JSS2
+              Neatest {personalInfo.gender === "Male" ? "boy" : "girl"} in{" "}
+              {personalInfo.class}
             </li>
           </ul>
         </div>
