@@ -14,6 +14,7 @@ const AdminSignInPage = () => {
   const navigate = useNavigate()
   //States
   const [error, setError] = useState("")
+  
   const handleGoogleSignIn = async () => {
     const auth = getAuth();
     await signInWithPopup(auth, provider)
