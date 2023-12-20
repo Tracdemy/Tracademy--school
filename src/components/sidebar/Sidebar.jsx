@@ -7,38 +7,45 @@ import Finance from "../../assets/svg/finance.svg";
 import Exams from "../../assets/svg/exams.svg";
 import Support from "../../assets/svg/support.svg";
 import Health from "../../assets/svg/health.svg";
+import Dashboard from "../../assets/svg/dashboard.svg";
 
 function Sidebar() {
   return (
     <div>
       <div className="bg-[#3527D6] text-white rounded-[2.5rem] w-[170px] 2xl:w-[200px] h-[580px]">
         <div className="py-5">
-          <div className="flex px-4 py-4 gap-2 items-center hover:bg-[#DFDFDF] hover:text-[#3527D6] hover:rounded-xl hover:mx-3  hover:transition hover:delay-300 hover:ease-in-out">
+          <div className="flex px-4 py-3 gap-2 items-center hover:bg-[#DFDFDF] hover:text-[#3527D6] hover:rounded-xl hover:mx-3  hover:transition hover:delay-300 hover:ease-in-out">
+            <span className="bg-[#DFDFDF] py-1 px-1 rounded-full">
+              <img src={Dashboard} alt="dashboard" />
+            </span>
+            <p>Dash Board</p>
+          </div>
+          <div className="flex px-4 py-3 gap-2 items-center hover:bg-[#DFDFDF] hover:text-[#3527D6] hover:rounded-xl hover:mx-3  hover:transition hover:delay-300 hover:ease-in-out">
             <span className="bg-[#DFDFDF] py-1 px-1 rounded-full">
               <img src={Performance} alt="perfomance" />
             </span>
             <p>Performance</p>
           </div>
-          <div className="flex px-4 py-4 gap-2 items-center hover:bg-[#DFDFDF] hover:text-[#3527D6] hover:rounded-xl hover:mx-3  hover:transition hover:delay-300 hover:ease-in-out">
+          <div className="flex px-4 py-3 gap-2 items-center hover:bg-[#DFDFDF] hover:text-[#3527D6] hover:rounded-xl hover:mx-3  hover:transition hover:delay-300 hover:ease-in-out">
             <span className="bg-[#DFDFDF] py-1 px-1 rounded-full">
               <img src={Extracurricular} alt="extracurricular" />
             </span>
             <p>Extracurricular</p>
           </div>
-          <div className="flex px-4 py-4 gap-2 items-center hover:bg-[#DFDFDF] hover:text-[#3527D6] hover:rounded-xl hover:mx-3  hover:transition hover:delay-300 hover:ease-in-out">
+          <div className="flex px-4 py-3 gap-2 items-center hover:bg-[#DFDFDF] hover:text-[#3527D6] hover:rounded-xl hover:mx-3  hover:transition hover:delay-300 hover:ease-in-out">
             <span className="bg-[#DFDFDF] py-1 px-1 rounded-full">
               <img src={Subject} alt="subject" />
             </span>
             <p>Subjects</p>
           </div>
-          <div className="flex px-4 py-4 gap-2 items-center hover:bg-[#DFDFDF] hover:text-[#3527D6] hover:rounded-xl hover:mx-3  hover:transition hover:delay-300 hover:ease-in-out">
+          <div className="flex px-4 py-3 gap-2 items-center hover:bg-[#DFDFDF] hover:text-[#3527D6] hover:rounded-xl hover:mx-3  hover:transition hover:delay-300 hover:ease-in-out">
             <span className="bg-[#DFDFDF] py-1 px-1 rounded-full">
               <img src={Parents} alt="parents" />
             </span>
             <p>Parents</p>
           </div>
 
-          <div className="flex px-4 py-4 gap-2 items-center hover:bg-[#DFDFDF] hover:text-[#3527D6] hover:rounded-xl hover:mx-3  hover:transition hover:delay-300 hover:ease-in-out">
+          <div className="flex px-4 py-3 gap-2 items-center hover:bg-[#DFDFDF] hover:text-[#3527D6] hover:rounded-xl hover:mx-3  hover:transition hover:delay-300 hover:ease-in-out">
             <span className="bg-[#DFDFDF] py-1 px-1 rounded-full">
               <img src={Teachers} alt="teachers" />
             </span>
