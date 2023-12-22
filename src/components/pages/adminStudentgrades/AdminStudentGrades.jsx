@@ -22,7 +22,7 @@ const AdminStudentsGrades = () => {
         <div className="flex gap-3 ml-4 mb-4">
           <StudentComponent />
           <PersonalInformation />
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-5 w-[430px]">
             <Result />
             <PrincipalChart />
           </div>

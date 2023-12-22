@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "../pages/home/Home";
 import StudentDashboard from "../pages/studentDashboard/StudentDashboard";
+import StudentSubject from "../pages/student_subject/StudentSubject";
 import AdminDashboard from "../pages/adminDashboard/AdminDashboard";
 import AdminSignInPage from "../pages/adminSignIn/AdminSignInPage";
 import LandingPage from "../pages/landingPage/LandingPage";
@@ -13,6 +14,7 @@ const AppRouter = () => {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/student-dashboard" element={<StudentDashboard />} />
+        <Route path="/student-subject" element={<StudentSubject />} />
         <Route path="/admin-sign-in" element={<AdminSignInPage />} />
         <Route path="/admin-dashboard" element={<AdminDashboard />} />
         <Route path="/admin-studentgrades" element={<AdminStudentsGrades />} />

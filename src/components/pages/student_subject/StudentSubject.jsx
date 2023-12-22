@@ -1,5 +1,4 @@
 import React from "react";
-import "./StudentDashboard.css";
 import Navbar from "../../navbar/Navbar.js";
 import Footer from "../../footer/Footer.js";
 import Sidebar from "../../sidebar/Sidebar.jsx";
@@ -11,9 +10,11 @@ import Calendar from "../../calendar/Calendar.jsx";
 import Recommended from "../../recommended/Recommended.jsx";
 import ViewComponent from "../../studentoverview_component/ViewComponent.jsx";
 import Result from "../../result/Result.jsx";
+import SubjectTaken from "../../subjects_taken/SubjectTaken.jsx";
+import PerformanceComponent from "../../performance-component/PerformanceComponent.jsx";
 
 // import StudentComponent from "../../student-component/StudentComponent.jsx";
-const StudentDashboard = () => {
+function StudentSubject() {
   return (
     <div className="mx-3 my-2">
       <Navbar />
@@ -26,9 +27,8 @@ const StudentDashboard = () => {
 
         <div className="w-[800px]">
           <ViewComponent />
-          <div className="my-3">
-            <Result />
-          </div>
+          <SubjectTaken />
+          <PerformanceComponent />
           <Recommended />
         </div>
         <div>
@@ -39,6 +39,6 @@ const StudentDashboard = () => {
       </div>
     </div>
   );
-};
+}
 
-export default StudentDashboard;
+export default StudentSubject;

@@ -3,7 +3,7 @@ import Principal from "../../assets/images/hairgirl.png";
 
 function Logout() {
   return (
-    <div className="py-5 px-2 bg-[#3527D6] text-white w-[250px] xl:w-[310px] my-5 rounded-2xl">
+    <div className="py-5 px-2 bg-[#3527D6] text-white w-[234px] my-5 rounded-2xl">
       <div className="flex gap-3">
         <img src={Principal} alt="principal" />
         <div className="leading-[16px]">

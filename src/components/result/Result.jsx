@@ -235,13 +235,18 @@ function Result() {
   } else if (personalInfo.department === "Art") {
     resultData = Arts;
   } else {
-    resultData = [];
+    resultData = science;
   }
 
   return (
-    <div className="border w-[400px] rounded-xl px-2 py-3 relative">
+    <div className="border rounded-xl px-2 py-3 relative">
       <div className="flex  justify-between ">
-        <h3 className="text-[#3527D6] text-[24px]">Results Records</h3>
+        <div className="flex gap-2 items-center">
+          <h3 className="text-[#3527D6] text-[24px]">Results Records</h3>
+          <div>
+            <img src="./svg/result_record.svg" alt="" />
+          </div>
+        </div>
         <div className="flex gap-3">
           <div className="rounded shadow-lg outline-none text-[#3527D6] px-2">
             <div
