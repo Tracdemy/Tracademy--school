@@ -4,7 +4,7 @@ import Navbar from "../../navbar/Navbar.js";
 import Footer from "../../footer/Footer.js";
 import Sidebar from "../../sidebar/Sidebar.jsx";
 import NoticeBar from "../../noticeboard/NoticeBar.jsx";
-import Logout from "../../logout/Logout.jsx";
+import Logout from "../../logout/AdminLogout.jsx";
 import CalanderDetails from "../../calander-details/CalanderDetails.jsx";
 import Assignment from "../../assignment/Assignment.jsx";
 import Calendar from "../../calendar/Calendar.jsx";

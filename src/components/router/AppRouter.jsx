@@ -20,7 +20,7 @@ const AppRouter = (props) => {
         />
         <Route path="/student-subject" element={<StudentSubject />} />
         <Route path="/admin-sign-in" element={<AdminSignInPage />} />
-        <Route path="/admin-dashboard" element={<AdminDashboard />} />
+        <Route path="/admin-dashboard" element={<AdminDashboard user={user}/>} />
         <Route path="/admin-studentgrades" element={<AdminStudentsGrades />} />
         <Route
           path="/admin-parentcommunication"
