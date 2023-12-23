@@ -1,6 +1,3 @@
-
-
-
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
@@ -16,13 +13,16 @@ const firebaseConfig = {
     measurementId: "G-QSFVHE3BBS"
 };
 
-// Initialize Firebase
+// Initialize Firebase app and analytics
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+
+// Create GoogleAuthProvider instance
 const provider = new GoogleAuthProvider();
 
+// Get authentication instance
 export {
-    signInWithPopup,
-    getAuth,
-    provider,
+  signInWithPopup,
+  getAuth,
+  provider,
 };
