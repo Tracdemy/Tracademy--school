@@ -5,7 +5,7 @@ function Logout(props) {
   return (
     <div className="py-5 px-2 bg-[#3527D6] text-white w-[234px] my-5 rounded-2xl">
       <div className="flex gap-3">
-        <img src={user?.photoURL} alt="principal" className="rounded-full max-w-7 max-h-7" />
+        <img src={user?.photoURL} alt="principal" className="w-5 h-5 rounded-full"/>
         <div className="leading-[16px]">
           <h2>{user?.displayName}</h2>
           <p>student</p>
