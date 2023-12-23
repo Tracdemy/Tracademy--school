@@ -10,13 +10,15 @@ function NoticeBar() {
   //   console.log(textItem.length);
   return (
     <div>
-      <h3 className="text-[30px] font-bold my-5">Notice Board </h3>
-      <div className="text-white bg-[#3527D6] px-4 py-4 rounded-xl text-[18px] overflow-auto">
-        <div className="overflow-y-auto w-[260px] xl:w-[310px] h-[500px] ">
+      <h3 className="text-[30px] font-bold my-2">Notice Board </h3>
+      <div className="text-white bg-[#3527D6] px-4 py-4 rounded-xl text-[12px] overflow-auto">
+        <div className="overflow-y-auto w-[200px]">
           <div className="my-4">
             <div className="flex gap-2 items-center">
               <span className="border rounded-2xl px-2 py-2 bg-white"></span>
-              <h4 className="font-bold text-[22px]">Upcoming mid-term break</h4>
+              <h4 className="font-bold text-[13pxpx]">
+                Upcoming mid-term break
+              </h4>
             </div>
 
             <p>
@@ -30,7 +32,7 @@ function NoticeBar() {
           <div className="my-4">
             <div className="flex gap-2 items-center">
               <span className="border rounded-2xl px-2 py-2 bg-white"></span>
-              <h4 className="font-bold text-[22px]">Inter-Club Competition</h4>
+              <h4 className="font-bold text-[13px]">Inter-Club Competition</h4>
             </div>
 
             <p>
@@ -44,7 +46,7 @@ function NoticeBar() {
           <div>
             <div className="flex gap-2 items-center">
               <span className="border rounded-2xl px-2 py-2 bg-white"></span>
-              <h4 className="font-bold text-[22px] my-3">Test Week</h4>
+              <h4 className="font-bold text-[13px] my-3">Test Week</h4>
             </div>
 
             <p>

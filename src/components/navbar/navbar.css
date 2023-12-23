@@ -3,3 +3,29 @@
     width: 351px;
   }
 }
+
+.navbar {
+  display: flex;
+}
+.small_screen {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar {
+    display: none;
+  }
+  .small-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+  }
+  .small_screen {
+    display: block;
+  }
+  .auth {
+    display: flex;
+    justify-content: center;
+  }
+}

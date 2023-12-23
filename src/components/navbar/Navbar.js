@@ -28,7 +28,7 @@ function Navbar() {
             value={searchBar}
             onChange={() => handleSearch}
             placeholder="Search Here"
-            className=" lg:w-[400px] xl:w-[600px] shadow-[0px_4px_4px_0px_#CACACA40] rounded px-4 py-2"
+            className=" lg:w-[400px] xl:w-[600px] shadow-[0px_4px_4px_0px_#CACACA40] rounded px-4 py-2 outline-none"
           />
           <img
             src={SearchIcon}
@@ -40,14 +40,18 @@ function Navbar() {
           <img
             src={Message}
             alt="message"
-            className=" rounded-3xl shadow px-2 py-2 hidden md:block"
+            className=" rounded-3xl shadow px-2 py-2 hidden md:block hover:transition hover:translate-y-[-4px] hover:ease-in-out hover:duration:300 hover:delay-300"
           />
           <img
             src={Notification}
             alt="notification"
-            className=" rounded-3xl shadow px-2 py-2 hidden md:block"
+            className=" rounded-3xl shadow px-2 py-2 hidden md:block hover:transition hover:translate-y-[-4px] hover:ease-in-out hover:duration:300 hover:delay-300"
           />
-          <img src={Principal} alt="principal-image" className="max-h-[32px]" />
+          <img
+            src={Principal}
+            alt="principal-image"
+            className="max-h-[32px] hover:transition hover:translate-y-[-4px] hover:ease-in-out hover:duration:300 hover:delay-300"
+          />
           <div>
             <h3 className="font-bold">Mrs Juliet</h3>
             <p className="text-[12px]">Principal</p>

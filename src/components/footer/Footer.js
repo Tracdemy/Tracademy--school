@@ -3,7 +3,7 @@ import FooterMan from "../../assets/images/cuate.png";
 
 function Footer() {
   return (
-    <div className="flex lg:justify-end ">
+    <div className="flex lg:justify-end">
       <div className="flex flex-col md:flex-row items-center justify-between md:w-[670px] xl:w-[920px] 2xl:w-[1440px] bg-[#3527D6] px-5 text-white py-4 rounded-2xl small-footer text-center md:text-start">
         <div className="flex flex-col gap-3">
           <h2 className="font-bold text-[24px]">Store your records securely</h2>

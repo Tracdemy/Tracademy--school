@@ -1,0 +1,16 @@
+.barca {
+  width: 600px;
+}
+@media screen and (max-width: 768px) {
+  .barca {
+    width: 380px;
+  }
+  .barca h1 {
+    font-size: 27px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .barca {
+    width: 300px;
+  }
+}
