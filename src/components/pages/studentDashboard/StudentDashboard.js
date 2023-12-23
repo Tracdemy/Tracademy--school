@@ -9,7 +9,8 @@ import CalanderDetails from "../../calander-details/CalanderDetails.jsx";
 import Assignment from "../../assignment/Assignment.jsx";
 import Calendar from "../../calendar/Calendar.jsx";
 // import StudentComponent from "../../student-component/StudentComponent.jsx";
-const StudentDashboard = () => {
+const StudentDashboard = (props) => {
+  const {user} = props
   return (
     <div className="mx-3 md:mx-10 my-2 ">
       <Navbar />
@@ -17,7 +18,7 @@ const StudentDashboard = () => {
         <div>
           <Sidebar />
           <NoticeBar />
-          <Logout />
+          <Logout user={user} />
         </div>
         <div>{/* <StudentComponent /> */}</div>
         <div>

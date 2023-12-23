@@ -1,15 +1,11 @@
 import LogoutImage from "../../assets/svg/logout.svg";
-import Principal from "../../assets/images/hairgirl.png";
-import { UserContext } from "../context/UserContext";
-import { useContext } from "react";
-function Logout() {
-
+function Logout(props) {
+  const {user} = props
   //useContex
-  const {user} = useContext(UserContext)
   return (
     <div className="py-5 px-2 bg-[#3527D6] text-white w-[250px] xl:w-[310px] my-5 rounded-2xl">
       <div className="flex gap-3">
-        <img src={Principal} alt="principal" />
+        <img src={user?.photoURL} alt="principal" className="rounded-full max-w-7 max-h-7" />
         <div className="leading-[16px]">
           <h2>{user?.displayName}</h2>
           <p>student</p>
