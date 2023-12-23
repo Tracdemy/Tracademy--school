@@ -1,5 +1,7 @@
 import LogoutImage from "../../assets/svg/logout.svg";
 function Logout(props) {
+
+  
   const {user} = props
   //useContex
   return (
