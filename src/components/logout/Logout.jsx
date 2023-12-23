@@ -3,7 +3,7 @@ function Logout(props) {
   const {user} = props
   //useContex
   return (
-    <div className="py-5 px-2 bg-[#3527D6] text-white w-[250px] xl:w-[310px] my-5 rounded-2xl">
+    <div className="py-5 px-2 bg-[#3527D6] text-white w-[234px] my-5 rounded-2xl">
       <div className="flex gap-3">
         <img src={user?.photoURL} alt="principal" className="rounded-full max-w-7 max-h-7" />
         <div className="leading-[16px]">

@@ -1,0 +1,24 @@
+.about_teacher {
+  width: 270px;
+}
+.teacher_image {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+}
+.offset {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.image_width {
+  width: 120px;
+  height: auto;
+}
+.box_shadow {
+  background-color: transparent;
+  /* opacity: 0.8; */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  padding: 8px;
+  border-radius: 0.375rem;
+}

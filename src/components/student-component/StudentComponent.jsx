@@ -8,7 +8,7 @@ function StudentComponent() {
   const { students, handleSubmit } = useContext(TracademyContext);
   //   console.log(students[0].avatar);
   return (
-    <div className="border px-4 rounded-xl py-4 h-[760px]">
+    <div className="border px-4 rounded-xl py-4 ">
       <table>
         <thead>
           <tr className="font-bold">
@@ -23,7 +23,7 @@ function StudentComponent() {
             <tr
               key={index}
               onClick={() => handleSubmit(student)}
-              className="cursor-pointer"
+              className="cursor-pointer h-[30px] text-[13px]"
             >
               <td>
                 <img src={student.avatar} alt="avatars" />
