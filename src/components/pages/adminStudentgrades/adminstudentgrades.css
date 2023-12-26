@@ -1,0 +1,33 @@
+@media screen and (min-width: 500px) and (max-width: 1075px) {
+  .change_resolution {
+    flex-wrap: wrap;
+  }
+  .change_width {
+    width: 100%;
+  }
+  .change_flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .change_direction {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 499px) {
+  .change_resolution {
+    flex-wrap: wrap;
+  }
+  .change_width {
+    width: 100%;
+  }
+  .change_flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .change_direction {
+    justify-content: center;
+    width: 330px;
+  }
+}

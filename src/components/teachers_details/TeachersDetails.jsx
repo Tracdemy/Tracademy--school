@@ -12,7 +12,7 @@ function TeachersDetails() {
   const { teachersInfo } = useContext(TracademyContext);
   //   console.log(teachersInfo);
   return (
-    <div className="py-3 px-3 rounded shadow about_teacher">
+    <div className="py-3 px-3 rounded shadow about_teacher change_width">
       <div className="flex flex-col justify-center items-center my-5">
         <img
           src={`${teachersInfo.avatar}`}
@@ -38,11 +38,11 @@ function TeachersDetails() {
           <p className="offset">See all</p>
         </div>
         <div className="mb-4">
-          <div className="flex gap-2 my-2">
+          <div className="flex gap-2 my-2 change_flex">
             <img src={SharedImage1} alt="sharedimage" className="image_width" />
             <img src={SharedImage2} alt="sharedimage" className="image_width" />
           </div>
-          <div className="flex gap-2">
+          <div className="flex gap-2 change_flex">
             <img src={SharedImage3} alt="sharedimage" className="image_width" />
             <img src={SharedImage4} alt="sharedimage" className="image_width" />
           </div>

@@ -11,7 +11,7 @@ function PerformanceComponent() {
           <img src={Performance} alt="performance" />
         </div>
       </div>
-      <div className="h-[345px]">
+      <div className="md:h-[345px]">
         <Bar
           data={{
             labels: [

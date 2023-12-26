@@ -3,6 +3,7 @@ import { Line } from "react-chartjs-2";
 import { useState } from "react";
 import ArrowBlack from "../../assets/svg/side_arrow_black.svg";
 import ArrowWhite from "../../assets/svg/side_arrow_white.svg";
+import "./school.css";
 
 function SchoolFinance() {
   const [activeButton, setActiveButton] = useState("weekly");
@@ -51,7 +52,7 @@ function SchoolFinance() {
   }
 
   return (
-    <div className="border shadow rounded-md px-6 py-3 w-[415px]">
+    <div className="border shadow rounded-md px-6 py-3 w-[415px] width_full">
       <div className="flex justify-between gap-3">
         <h2 className="font-bold">School Finance</h2>
         <div className="flex gap-3 items-center">

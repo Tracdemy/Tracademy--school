@@ -1,0 +1,35 @@
+@media screen and (max-width: 659px) {
+  .view_resize {
+    flex-direction: column;
+  }
+  .resize_width {
+    width: 100%;
+  }
+  /* .adjusted_left {
+    position: absolute;
+    top: 44px;
+    left: 130px;
+  }
+  .adjusted_left2 {
+    position: absolute;
+    top: 24px;
+    left: 138px;
+  } */
+}
+
+@media screen and (min-width: 660px) and (max-width: 767px) {
+  /* .adjusted_left {
+    position: absolute;
+    left: 45px;
+  }
+  .adjusted_left2 {
+    position: absolute;
+    left: 52px;
+  } */
+}
+
+@media screen and (max-width: 320px) {
+  .overview {
+    margin-right: 0;
+  }
+}

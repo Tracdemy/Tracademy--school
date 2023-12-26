@@ -1,8 +1,9 @@
 import PropTypes from "prop-types";
+import "./viewcomponent.css";
 
 function OverviewComponent({ children, image, description, title }) {
   return (
-    <div className="border shadow px-2 py-2 w-[200px]">
+    <div className="border shadow px-2 py-2 w-[200px] resize_width">
       <div className="flex gap-2">
         <img src={image} alt="result_svg" />
         <p>{title}</p>

@@ -1,0 +1,33 @@
+@media screen and (min-width: 660px) and (max-width: 767px) {
+  .overview {
+    width: 650px;
+  }
+  .flowing {
+    width: 550px;
+  }
+}
+
+@media screen and (max-width: 1123px) {
+  .change_content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .student_chart {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .change_center {
+    justify-content: center;
+  }
+  .change_setting {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+}

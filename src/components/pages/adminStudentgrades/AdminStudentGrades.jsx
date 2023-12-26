@@ -12,24 +12,26 @@ import Result from "../../result/Result.jsx";
 import PrincipalChart from "../../charts/principalchart/PrincipalChart.jsx";
 const AdminStudentsGrades = () => {
   return (
-    <div className="mx-3 md:mx-10">
+    <div className="md:mx-3 2xl:mx-10 px-2">
       <Navbar />
-      <div className="flex justify-between">
-        <div>
+      <div className="flex ">
+        <div className="hidden xl:block">
           <Sidebar />
           <Todo />
         </div>
-        <div className="flex gap-3 ml-4 mb-4">
+        <div className="flex gap-3 ml-4 mb-4 change_resolution change_direction">
           <StudentComponent />
           <PersonalInformation />
-          <div className="flex flex-col gap-5 w-[430px]">
+          <div className="flex flex-col gap-5 w-[420px] change_flex change-width">
             <Result />
             <PrincipalChart />
           </div>
         </div>
       </div>
       <div className="flex gap-3">
-        <Logout />
+        <div className="hidden xl:block">
+          <Logout />
+        </div>
         <Footer />
       </div>
     </div>
