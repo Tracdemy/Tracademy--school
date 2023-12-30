@@ -33,7 +33,7 @@ function ChatComponent() {
         <h3 className="mx-2">Today</h3>
         <span className="mb-[14px] text-[#FFFFFF]">____________</span>
       </div>
-      <div className="relative ml-[40px]">
+      <div className="relative ml-[40px] my-3">
         <div className="absolute top-[-26px] right-[-24px]">
           <PictureComponent image={`${teachersInfo.avatar}`} />
         </div>

@@ -239,55 +239,53 @@ function Result() {
   }
 
   return (
-    <div className="border rounded-xl px-2 py-3 relative">
-      <div className="flex  justify-between ">
-        <div className="flex gap-2 items-center">
-          <h3 className="text-[#3527D6] text-[24px]">Results Records</h3>
-          <div>
-            <img src="./svg/result_record.svg" alt="" />
-          </div>
-        </div>
-        <div className="flex gap-3">
-          <div className="rounded shadow-lg outline-none text-[#3527D6] px-2">
-            <div
-              className="flex items-center gap-3 py-2"
-              onClick={() => handleShowState(0)}
-            >
-              Year
-              <img src={BlueDown} alt="" />
-            </div>
-            {showItems === 0 && (
-              <div className="absolute top-[60px] right-[93px] bg-white px-6 py-2 rounded cursor-pointer">
-                <option value="">2018</option>
-                <option value="">2019</option>
-                <option value="">2020</option>
-                <option value="">2021</option>
-                <option value="">2022</option>
-                <option value="">2023</option>
-              </div>
-            )}
-          </div>
-
-          <div className="shadow-lg rounded outline-none text-[#3527D6] px-2">
-            <div
-              className="flex items-center gap-3 py-2"
-              onClick={() => handleShowState(1)}
-            >
-              Term <img src={BlueDown} alt="down" />
-            </div>
-
-            {showItems === 1 && (
-              <div className="absolute top-[60px] right-[8px] bg-white py-2 px-2 rounded cursor-pointer">
-                <option value="">First</option>
-                <option value="">Second</option>
-                <option value="">Third</option>
-              </div>
-            )}
-          </div>
+    <div className="border rounded-xl px-2 py-3 relative change_width">
+      <div className="flex justify-between items-center gap-2">
+        <h3 className="text-[#3527D6] text-[24px]">Results Records</h3>
+        <div>
+          <img src="./svg/result_record.svg" alt="" />
         </div>
       </div>
-      <div>
-        <table className="w-full text-[15px] my-5">
+      <div className="flex justify-between items-center gap-3">
+        <div className="rounded shadow-lg outline-none text-[#3527D6] px-2">
+          <div
+            className="flex items-center gap-3 py-2"
+            onClick={() => handleShowState(0)}
+          >
+            Year
+            <img src={BlueDown} alt="" />
+          </div>
+          {showItems === 0 && (
+            <div className="absolute top-[60px] right-[93px] bg-white px-6 py-2 rounded cursor-pointer">
+              <option value="">2018</option>
+              <option value="">2019</option>
+              <option value="">2020</option>
+              <option value="">2021</option>
+              <option value="">2022</option>
+              <option value="">2023</option>
+            </div>
+          )}
+        </div>
+
+        <div className="shadow-lg rounded outline-none text-[#3527D6] px-2">
+          <div
+            className="flex items-center gap-3 py-2"
+            onClick={() => handleShowState(1)}
+          >
+            Term <img src={BlueDown} alt="down" />
+          </div>
+
+          {showItems === 1 && (
+            <div className="absolute top-[60px] right-[8px] bg-white py-2 px-2 rounded cursor-pointer">
+              <option value="">First</option>
+              <option value="">Second</option>
+              <option value="">Third</option>
+            </div>
+          )}
+        </div>
+      </div>
+      <div className="overflow-x-auto max-w-[600px]">
+        <table className="w-full text-[10px] md:text-[15px] my-5">
           <tr className="font-bold">
             <td>Subject</td>
             <td>Assignment</td>

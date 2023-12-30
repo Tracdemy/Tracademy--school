@@ -1,13 +1,14 @@
 import Calender from "../../assets/svg/solar_calendar-bold.svg";
 import { Chart as ChartJS } from "chart.js/auto";
 import { Line } from "react-chartjs-2";
+import "./school.css"
 
 function SchoolPerformance() {
   return (
-    <div className="border shadow rounded py-3 px-4 w-[550px]">
+    <div className="border shadow rounded py-3 px-4 w-[550px] width_full">
       <div className="flex justify-between gap-4">
         <h3 className="font-bold">School Performance</h3>
-        <div className="flex justify-between gap-4">
+        <div className="md:flex justify-between gap-4 hidden">
           <div className="flex gap-2">
             <span className="rounded-full bg-[#D8EEBD]  px-[12px]"></span>
             <p>Students</p>

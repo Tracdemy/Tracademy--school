@@ -1,0 +1,11 @@
+@media screen and (min-width: 768px) and (max-width: 1075px) {
+  .change_width {
+    width: 500px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 499px) {
+  .change_width {
+    width: 320px;
+  }
+}

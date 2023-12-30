@@ -12,7 +12,7 @@ function StudentChart() {
           <option>SS3</option>
         </select>
       </div>
-      <div>
+      <div className="change_display">
         <Doughnut
           data={{
             labels: ["Girls", "Boys"],

@@ -1,6 +1,7 @@
 import ArrowLeft from "../../assets/svg/arrowleft.svg";
 import ArrowRight from "../../assets/svg/bluearrow_right.svg";
 import SubjectComponent from "./SubjectComponent";
+import "./subject.css";
 
 function SubjectTaken() {
   return (
@@ -14,7 +15,7 @@ function SubjectTaken() {
           <img src={ArrowRight} alt="arrow-right" />
         </div>
       </div>
-      <div className="flex gap-3 justify-between">
+      <div className="flex gap-3 justify-between w-[320px] md:w-[750px]  overflow-x-scroll ">
         <SubjectComponent
           realScore={57}
           score={100 - 57}

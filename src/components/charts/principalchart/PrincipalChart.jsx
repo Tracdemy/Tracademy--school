@@ -23,7 +23,7 @@ function PrincipalChart() {
   }
 
   return (
-    <div className=" bg-white  border px-3 py-2 rounded-xl h-[277px]">
+    <div className=" bg-white  border px-3 py-2 rounded-xl h-[277px]change_width">
       <div className="flex justify-between item-center">
         <h2 className="text-[#3527D6] font-bold text-[20px]">
           {personalInfo.name}'s performance
@@ -39,7 +39,7 @@ function PrincipalChart() {
               {
                 label: "percentage",
                 data: data,
-                borderColor: '#3527D6',
+                borderColor: "#3527D6",
               },
             ],
           }}

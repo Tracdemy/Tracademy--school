@@ -11,7 +11,7 @@ function Chat({ handleShowState }) {
   console.log(teachersInfo);
   return (
     <div className="bg-[#F2F3FF] border rounded-md w-[350px] pb-2 relative">
-      <div className="bg-white text-[#3527D6] rounded flex justify-between px-4 py-3">
+      <div className="bg-white text-[#3527D6] rounded flex justify-between px-4 py-3 ">
         <div
           className="flex items-center gap-2 cursor-pointer"
           onClick={handleShowState}

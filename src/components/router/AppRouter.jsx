@@ -13,7 +13,7 @@ const AppRouter = (props) => {
   return (
     <div className="appRouter">
       <Routes>
-        <Route exact path="/" element={<Home />} />
+        <Route path="/" element={<LandingPage />} />
         <Route
           path="/student-dashboard"
           element={<StudentDashboard user={user} />}
@@ -21,12 +21,12 @@ const AppRouter = (props) => {
         <Route path="/student-subject" element={<StudentSubject />} />
         <Route path="/admin-sign-in" element={<AdminSignInPage />} />
         <Route path="/admin-dashboard" element={<AdminDashboard user={user}/>} />
-        <Route path="/admin-studentgrades" element={<AdminStudentsGrades />} />
+        <Route path="/studentgrades" element={<AdminStudentsGrades />} />
         <Route
           path="/admin-parentcommunication"
           element={<ParentCommunication />}
         />
-        <Route path="/landing-page" element={<LandingPage />} />
+        <Route exact path="/sign-in" element={<Home />} />
       </Routes>
     </div>
   );

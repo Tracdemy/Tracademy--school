@@ -4,7 +4,7 @@ function PersonalData() {
   const { personalInfo } = useContext(TracademyContext);
   return (
     <div>
-      <div className="border px-4 py-4 w-[300px] rounded-xl ">
+      <div className="border px-4 py-4 w-[300px] rounded-xl change_width">
         <h2 className="text-[#3527D6] font-bold text-center text-[25px]">
           Personal Information
         </h2>
