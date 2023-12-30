@@ -6,7 +6,7 @@ import LightDot from "../../../assets/images/light_dot.png";
 
 function Learning() {
   return (
-    <div className="flex justify-between items-center love">
+    <div className="flex justify-between items-center love mx-5">
       <div className="relative ml-[70px] w-[600px] mx-3 md:mx-0 good">
         <h1 className="font-bold say">
           Learning made fun and easy with{" "}

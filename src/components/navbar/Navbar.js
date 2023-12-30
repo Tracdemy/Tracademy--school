@@ -8,7 +8,7 @@ import Hamburger from "../../assets/svg/blue_hamburger.svg";
 import "./navbar.css";
 import Sidebar from "../sidebar/Sidebar.jsx";
 import NoticeBar from "../noticeboard/NoticeBar.jsx";
-import Logout from "../logout/Logout.jsx";
+import Logout from "../studentLogout/Logout.jsx";
 
 // import logoImg from "./assets/Group 67.png";
 
@@ -52,7 +52,7 @@ function Navbar() {
           />
           <img
             src={Principal}
-            alt="principal-image"
+            alt="principal-img"
             className="max-h-[32px] hover:transition hover:translate-y-[-4px] hover:ease-in-out hover:duration:300 hover:delay-300"
           />
           <div>
@@ -113,7 +113,7 @@ function Navbar() {
           />
           <img
             src={Principal}
-            alt="principal-image"
+            alt="principal-img"
             className="max-h-[32px] hover:transition hover:translate-y-[-4px] hover:ease-in-out hover:duration:300 hover:delay-300"
           />
           <div>

@@ -11,7 +11,7 @@ import Dashboard from "../../assets/svg/dashboard.svg";
 import studentGrades from "./assets/material-symbols_bar-chart.png"
 import { Link } from "react-router-dom";
 
-function Sidebar() {
+function StudentSidebar() {
   return (
     <div>
       <div className="bg-[#3527D6] text-white rounded-[2.5rem] 2xl:w-[200px] h-[580px] min-w-fit">
@@ -20,7 +20,7 @@ function Sidebar() {
             <span className="bg-[#DFDFDF] py-1 px-1 rounded-full">
               <img src={Dashboard} alt="dashboard" />
             </span>
-            <Link to="/admin-dashboard">Dashboard</Link>
+            <Link to="/student-dashboard">Dashboard</Link>
           </div>
           <div className="flex px-4 py-3 gap-2 items-center hover:bg-[#DFDFDF] hover:text-[#3527D6] hover:rounded-xl hover:mx-3  hover:transition hover:delay-300 hover:ease-in-out">
             <span className="bg-[#DFDFDF] py-1 px-1 rounded-full">
@@ -88,4 +88,4 @@ function Sidebar() {
     </div>
   );
 }
-export default Sidebar;
+export default StudentSidebar;
