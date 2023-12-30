@@ -6,7 +6,9 @@ function RecommendedContainer({ image, details }) {
       <div className="rounded-md bg-[#D5CEF1] px-2 py-2 mt-3">
         <img src={image} alt="recommendation1" />
       </div>
-      <p className="underline text-center font-bold">{details}</p>
+      <p className="underline text-center font-bold text-[8px] md:text-[16px]">
+        {details}
+      </p>
     </div>
   );
 }

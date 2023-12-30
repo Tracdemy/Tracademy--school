@@ -2,14 +2,15 @@ import { useContext } from "react";
 import { TracademyContext } from "../../context/TracademyContext";
 import Minus from "../../assets/svg/minus.svg";
 import Plus from "../../assets/svg/plus.svg";
+import "./student.css";
 // import Avatar from "../../assets/avatars/nancy-dube.png";
 
 function StudentComponent() {
   const { students, handleSubmit } = useContext(TracademyContext);
   //   console.log(students[0].avatar);
   return (
-    <div className="border px-4 rounded-xl py-4 ">
-      <table>
+    <div className="border px-4 rounded-xl py-4 change_width">
+      <table className="w-full">
         <thead>
           <tr className="font-bold">
             <td>SS1C</td>

@@ -6,7 +6,7 @@ function SubjectComponent({ score, subjectName, color1, realScore }) {
   return (
     <div className="border shadow px-3 py-2">
       <h3>{subjectName}</h3>
-      <div className="w-[220px] h-[120px] flex justify-center">
+      <div className=" w-[180px] h-[80px] lg:w-[220px] lg:h-[120px] flex justify-center">
         <Pie
           data={{
             datasets: [

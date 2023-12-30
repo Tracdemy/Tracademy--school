@@ -12,7 +12,7 @@ function Recommended() {
           <img src={ArrowRight} alt="arrow-right" />
         </div>
       </div>
-      <div className="flex  justify-between gap-5">
+      <div className="flex  overflow-x-auto justify-between gap-5 w-full">
         <RecommendedContainer
           image="./img/recommendation1.png"
           details="Update your health records"

@@ -19,37 +19,39 @@ const AdminDashboard = (props) => {
   return (
     <div className="mx-3 md:mx-10">
       <Navbar />
-      <div className="flex justify-between">
-        <div>
+      <div className="flex justify-between change_content">
+        <div className="hidden xl:block">
           <Sidebar />
         </div>
         <div>
           <h3 className="my-2 ">Admin OverView</h3>
-          <div className="flex gap-3  mb-4">
-            <div className="flex gap-5">
-              <Overview
-                image="./img/box1.png"
-                description="No. of students"
-                amount={5347}
-              />
-              <Overview
-                image="./img/box2.png"
-                description="No. of teachers"
-                amount={155}
-              />
-              <Overview
-                image="./img/box3.png"
-                description="No. of Non-Teaching staff"
-                amount={78}
-              />
-              <Overview
-                image="./img/box4.png"
-                description="No. of events"
-                amount={40}
-              />
+          <div>
+            <div className="flex gap-3  mb-4 change_center">
+              <div className="flex gap-5 change_setting">
+                <Overview
+                  image="./img/box1.png"
+                  description="No. of students"
+                  amount={5347}
+                />
+                <Overview
+                  image="./img/box2.png"
+                  description="No. of teachers"
+                  amount={155}
+                />
+                <Overview
+                  image="./img/box3.png"
+                  description="No. of Non-Teaching staff"
+                  amount={78}
+                />
+                <Overview
+                  image="./img/box4.png"
+                  description="No. of events"
+                  amount={40}
+                />
+              </div>
             </div>
           </div>
-          <div className="flex my-4 justify-between gap-3">
+          <div className="flex my-4 justify-between gap-3 student_chart ">
             <StudentChart />
             <TeachersList />
           </div>
@@ -85,13 +87,17 @@ const AdminDashboard = (props) => {
           <Events />
         </div>
       </div>
-      <div className="flex justify-between my-4">
-        <Todo />
+      <div className="flex justify-between my-4 gap-3 flex-wrap">
+        <div className="hidden xl:block">
+          <Todo />
+        </div>
         <SchoolPerformance />
         <SchoolFinance />
       </div>
       <div className="flex gap-3">
-        <AdminLogout user={user}/>
+        <div className="hidden xl:block">
+          <AdminLogout user={user}/>
+        </div>
         <Footer />
       </div>
     </div>

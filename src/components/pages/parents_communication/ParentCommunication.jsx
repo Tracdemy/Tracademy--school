@@ -17,11 +17,11 @@ function ParentCommunication() {
     <div className="mx-3 md:mx-10">
       <Navbar />
       <div className="flex justify-between">
-        <div>
+        <div className="hidden xl:block">
           <Sidebar />
           <Todo />
         </div>
-        <div className="flex gap-4 my-3">
+        <div className="flex gap-4 my-3 change_flex">
           <TeacherSubject />
           <Chat handleShowState={handleShowState} />
           {showDialog && <TeachersDetails />}
@@ -29,7 +29,9 @@ function ParentCommunication() {
       </div>
 
       <div className="flex gap-3">
-        <Logout />
+        <div className="hidden xl:block">
+          <Logout />
+        </div>
         <Footer />
       </div>
     </div>
