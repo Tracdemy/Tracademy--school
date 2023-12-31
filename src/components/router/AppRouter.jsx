@@ -8,26 +8,29 @@ import AdminSignInPage from "../pages/adminSignIn/AdminSignInPage";
 import LandingPage from "../pages/landingPage/LandingPage";
 import AdminStudentsGrades from "../pages/adminStudentgrades/AdminStudentGrades";
 import ParentCommunication from "../pages/parents_communication/ParentCommunication";
-import AddStudent from "../addstudent/AddStudent";
 const AppRouter = () => {
   return (
     <div className="appRouter">
       <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/student-dashboard" element={<StudentDashboard />} />
+        <Route path="/" element={<LandingPage />} />
+        <Route
+          path="/student-dashboard"
+          element={<StudentDashboard user={user} />}
+        />
         <Route path="/student-subject" element={<StudentSubject />} />
         <Route path="/admin-sign-in" element={<AdminSignInPage />} />
-        <Route path="/admin-dashboard" element={<AdminDashboard />} />
-        <Route path="/admin-studentgrades" element={<AdminStudentsGrades />} />
+        <Route
+          path="/admin-dashboard"
+          element={<AdminDashboard user={user} />}
+        />
+        <Route path="/studentgrades" element={<AdminStudentsGrades />} />
         <Route
           path="/admin-parentcommunication"
           element={<ParentCommunication />}
         />
         <Route path="/landing-page" element={<LandingPage />} />
-        <Route path="/add-student" element={<AddStudent />} />
       </Routes>
     </div>
   );
 };
-
 export default AppRouter;

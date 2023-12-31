@@ -4,7 +4,6 @@ import Navbar from "../../navbar/Navbar.js";
 import Footer from "../../footer/Footer.js";
 import Sidebar from "../../sidebar/Sidebar.jsx";
 // import NoticeBar from "../../noticeboard/NoticeBar.jsx";
-import Logout from "../../logout/Logout.jsx";
 import Todo from "../../todo/Todo.jsx";
 import Calendar from "../../calendar/Calendar.jsx";
 import Events from "../../upcoming-events/Events.jsx";
@@ -13,7 +12,10 @@ import StudentChart from "../../charts/StudentChart.jsx";
 import SchoolPerformance from "../../charts/SchoolPerformance.jsx";
 import SchoolFinance from "../../charts/SchoolFinance.jsx";
 import TeachersList from "../../teachers_list/TeachersList.jsx";
-const AdminDashboard = () => {
+import AdminLogout from "../../logout/AdminLogout.jsx";
+const AdminDashboard = (props) => {
+
+  const {user} = props
   return (
     <div className="mx-3 md:mx-10">
       <Navbar />
@@ -94,7 +96,7 @@ const AdminDashboard = () => {
       </div>
       <div className="flex gap-3">
         <div className="hidden xl:block">
-          <Logout />
+          <AdminLogout user={user}/>
         </div>
         <Footer />
       </div>

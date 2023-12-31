@@ -62,6 +62,7 @@ export default function TracademyProvider({ children }) {
   };
 
   const handleAddStudent = (e) => {
+    // console.log("handleAddStudent called");
     e.preventDefault();
     const newItems = {
       studentName: studentName,
@@ -104,8 +105,8 @@ export default function TracademyProvider({ children }) {
     setStudentClass("");
     setTerm("");
     setSubjectOffered("");
+    console.log(addStudent);
   };
-  console.log(addStudent);
   // console.log(() => handleAddStudent());
 
   // console.log(Data.teachers[0]);

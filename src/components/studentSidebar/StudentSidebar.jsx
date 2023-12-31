@@ -12,9 +12,9 @@ import Health from "../../assets/svg/health.svg";
 import Dashboard from "../../assets/svg/dashboard.svg";
 import studentGrades from "./assets/material-symbols_bar-chart.png";
 
-// Array of objects for the sidebar links
-const sidebarLinks = [
-  { to: "/admin-dashboard", text: "Dashboard", icon: Dashboard },
+// Array of objects for the student sidebar links
+const studentSidebarLinks = [
+  { to: "/student-dashboard", text: "Dashboard", icon: Dashboard },
   { to: "#", text: "Performance", icon: Performance },
   { to: "#", text: "Extracurricular", icon: Extracurricular },
   { to: "/studentgrades", text: "Student grades", icon: studentGrades },
@@ -27,14 +27,14 @@ const sidebarLinks = [
   { to: "#", text: "Health", icon: Health },
 ];
 
-function Sidebar() {
+function StudentSidebar() {
   const location = useLocation();
 
   return (
     <div>
       <div className="bg-[#3527D6] text-white rounded-[2.5rem] 2xl:w-[200px] h-[580px] min-w-fit">
         <div className="py-5">
-          {sidebarLinks.map((link, index) => (
+          {studentSidebarLinks.map((link, index) => (
             <NavLink
               key={index}
               to={link.to}
@@ -56,4 +56,4 @@ function Sidebar() {
   );
 }
 
-export default Sidebar;
+export default StudentSidebar;

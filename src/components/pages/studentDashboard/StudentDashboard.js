@@ -2,26 +2,27 @@ import React from "react";
 import "./StudentDashboard.css";
 import Navbar from "../../navbar/Navbar.js";
 import Footer from "../../footer/Footer.js";
-import Sidebar from "../../sidebar/Sidebar.jsx";
 import NoticeBar from "../../noticeboard/NoticeBar.jsx";
-import Logout from "../../logout/Logout.jsx";
+import Logout from "../../logout/AdminLogout.jsx";
 import CalanderDetails from "../../calander-details/CalanderDetails.jsx";
 import Assignment from "../../assignment/Assignment.jsx";
 import Calendar from "../../calendar/Calendar.jsx";
 import Recommended from "../../recommended/Recommended.jsx";
 import ViewComponent from "../../studentoverview_component/ViewComponent.jsx";
 import Result from "../../result/Result.jsx";
+import StudentSidebar from "../../studentSidebar/StudentSidebar.jsx";
 
 // import StudentComponent from "../../student-component/StudentComponent.jsx";
-const StudentDashboard = () => {
+const StudentDashboard = (props) => {
+  const {user} = props
   return (
     <div className="mx-3 my-2">
       <Navbar />
       <div className="flex flex-col items-center lg:flex-row justify-between gap-2">
         <div className="hidden xl:block">
-          <Sidebar />
+          <StudentSidebar />
           <NoticeBar />
-          <Logout />
+          <Logout user={user} />
         </div>
 
         <div className="overview md:w-[750px] 2xl:w-[800px] mx-5">

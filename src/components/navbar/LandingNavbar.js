@@ -2,6 +2,7 @@ import Logo from "../../assets/svg/barca_logo.svg";
 import "./navbar.css";
 import Hamburger from "../../assets/svg/blue_hamburger.svg";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function LandingNavbar() {
   const [showMenu, setShowMenu] = useState(false);
@@ -25,7 +26,7 @@ function LandingNavbar() {
           </ul>
         </div>
         <div className="flex gap-3">
-          <button className="hover:text-[#5956E9]">Sign in</button>
+          <Link to="/sign-in" className="hover:text-[#5956E9] mt-3">Sign in</Link>
           <button className="text-[white] bg-[#5956E9] py-2 px-4 rounded-md hover:text-black hover:bg-[white]">
             Register
           </button>
