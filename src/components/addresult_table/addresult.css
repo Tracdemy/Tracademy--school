@@ -1,0 +1,28 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* td {
+  border: 1px solid #e2e8f0;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  padding: 8px;
+  text-align: left;
+} */
+
+tr:hover {
+  background-color: #f7fafc;
+}
+
+/* Add any other styles you need for buttons, images, etc. */
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .changed_width {
+    width: 100%;
+    font-size: 9px;
+  }
+}

@@ -8,6 +8,7 @@ import AdminSignInPage from "../pages/adminSignIn/AdminSignInPage";
 import LandingPage from "../pages/landingPage/LandingPage";
 import AdminStudentsGrades from "../pages/adminStudentgrades/AdminStudentGrades";
 import ParentCommunication from "../pages/parents_communication/ParentCommunication";
+import AddStudent from "../addstudent/AddStudent";
 const AppRouter = () => {
   return (
     <div className="appRouter">
@@ -23,6 +24,7 @@ const AppRouter = () => {
           element={<ParentCommunication />}
         />
         <Route path="/landing-page" element={<LandingPage />} />
+        <Route path="/add-student" element={<AddStudent />} />
       </Routes>
     </div>
   );

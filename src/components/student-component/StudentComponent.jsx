@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { TracademyContext } from "../../context/TracademyContext";
 import Minus from "../../assets/svg/minus.svg";
 import Plus from "../../assets/svg/plus.svg";
@@ -6,7 +6,8 @@ import "./student.css";
 // import Avatar from "../../assets/avatars/nancy-dube.png";
 
 function StudentComponent() {
-  const { students, handleSubmit } = useContext(TracademyContext);
+  const { students, handleSubmit, setShowAdd } = useContext(TracademyContext);
+  
   //   console.log(students[0].avatar);
   return (
     <div className="border px-4 rounded-xl py-4 change_width">
@@ -38,7 +39,10 @@ function StudentComponent() {
       </table>
       <div className="flex justify-between my-4">
         <div className="flex items-center gap-2 mx-2 cursor-pointer">
-          <button className="rounded-full bg-[#3527D6] text-[#D8EEBD] py-2 px-2">
+          <button
+            className="rounded-full bg-[#3527D6] text-[#D8EEBD] py-2 px-2"
+            onClick={() => setShowAdd(true)}
+          >
             <img src={Plus} alt="plus" />
           </button>
           <h4 className="font-bold">Add Student</h4>

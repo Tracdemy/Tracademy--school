@@ -3,14 +3,19 @@ import "./adminstudentgrades.css";
 import Navbar from "../../navbar/Navbar.js";
 import Footer from "../../footer/Footer.js";
 import Sidebar from "../../sidebar/Sidebar.jsx";
-// import NoticeBar from "../../noticeboard/NoticeBar.jsx";
 import Logout from "../../logout/Logout.jsx";
 import Todo from "../../todo/Todo.jsx";
 import StudentComponent from "../../student-component/StudentComponent.jsx";
 import PersonalInformation from "../../personal-info/PersonalInformation.jsx";
 import Result from "../../result/Result.jsx";
 import PrincipalChart from "../../charts/principalchart/PrincipalChart.jsx";
+import { useContext } from "react";
+import { TracademyContext } from "../../../context/TracademyContext.jsx";
+import AddStudent from "../../addstudent/AddStudent.jsx";
+
 const AdminStudentsGrades = () => {
+  const { showAdd } = useContext(TracademyContext);
+
   return (
     <div className="md:mx-3 2xl:mx-10 px-2">
       <Navbar />
@@ -28,6 +33,11 @@ const AdminStudentsGrades = () => {
           </div>
         </div>
       </div>
+      {showAdd && (
+        <div className="overlay ">
+          <AddStudent />
+        </div>
+      )}
       <div className="flex gap-3">
         <div className="hidden xl:block">
           <Logout />

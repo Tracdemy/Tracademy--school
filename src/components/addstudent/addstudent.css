@@ -1,0 +1,26 @@
+@media screen and (min-width: 320px) and (max-width: 899px) {
+  .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .change_justify {
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .change_flex {
+    flex-direction: column;
+  }
+  .change_width {
+    width: 100%;
+  }
+}
+
+@media screen and(max-width: 320px){
+    .increase_height{
+        height: 123vh;
+    }
+}
