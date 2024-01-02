@@ -12,17 +12,17 @@ const AppRouter = () => {
   return (
     <div className="appRouter">
       <Routes>
-        <Route exact path="/" element={<Home />} />
+        <Route path="/" element={<LandingPage />} />
+        <Route exact path="/sign" element={<Home />} />
         <Route path="/student-dashboard" element={<StudentDashboard />} />
         <Route path="/student-subject" element={<StudentSubject />} />
         <Route path="/admin-sign-in" element={<AdminSignInPage />} />
         <Route path="/admin-dashboard" element={<AdminDashboard />} />
-        <Route path="/admin-studentgrades" element={<AdminStudentsGrades />} />
+        <Route path="/studentgrades" element={<AdminStudentsGrades />} />
         <Route
           path="/admin-parentcommunication"
           element={<ParentCommunication />}
         />
-        <Route path="/landing-page" element={<LandingPage />} />
       </Routes>
     </div>
   );

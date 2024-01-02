@@ -26,7 +26,7 @@ function LandingNavbar() {
           </ul>
         </div>
         <div className="flex gap-3">
-          <Link to="/sign-in" className="hover:text-[#5956E9] mt-3">Sign in</Link>
+          <Link to="/sign" className="hover:text-[#5956E9] mt-3">Sign in</Link>
           <button className="text-[white] bg-[#5956E9] py-2 px-4 rounded-md hover:text-black hover:bg-[white]">
             Register
           </button>
