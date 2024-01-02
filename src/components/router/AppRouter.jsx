@@ -12,18 +12,12 @@ const AppRouter = () => {
   return (
     <div className="appRouter">
       <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route
-          path="/student-dashboard"
-          element={<StudentDashboard user={user} />}
-        />
+        <Route exact path="/" element={<Home />} />
+        <Route path="/student-dashboard" element={<StudentDashboard />} />
         <Route path="/student-subject" element={<StudentSubject />} />
         <Route path="/admin-sign-in" element={<AdminSignInPage />} />
-        <Route
-          path="/admin-dashboard"
-          element={<AdminDashboard user={user} />}
-        />
-        <Route path="/studentgrades" element={<AdminStudentsGrades />} />
+        <Route path="/admin-dashboard" element={<AdminDashboard />} />
+        <Route path="/admin-studentgrades" element={<AdminStudentsGrades />} />
         <Route
           path="/admin-parentcommunication"
           element={<ParentCommunication />}
@@ -33,4 +27,5 @@ const AppRouter = () => {
     </div>
   );
 };
+
 export default AppRouter;

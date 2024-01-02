@@ -4,7 +4,6 @@ import AddResultTable from "../addresult_table/AddResultTable";
 import { TracademyContext } from "../../context/TracademyContext";
 import { useContext, useRef } from "react";
 import "./addstudent.css";
-import { toast } from "react-toastify";
 
 function AddStudent() {
   const inputRef = useRef(null);
@@ -336,7 +335,6 @@ function AddStudent() {
                 <button
                   className="px-2 py-2 rounded-lg border"
                   onClick={() => {
-                    toast("You have successfully added a student");
                     setShowAdd(false);
                   }}
                 >
