@@ -8,8 +8,8 @@ import "./addstudent.css";
 function AddStudent() {
   const inputRef = useRef(null);
   const {
-    studentName,
-    setStudentName,
+    name,
+    setName,
     email,
     setEmail,
     address,
@@ -18,30 +18,30 @@ function AddStudent() {
     setDateofbirth,
     gender,
     setGender,
-    studentId,
-    setStudentId,
-    number,
-    setNumber,
+    id,
+    setId,
+    mobile,
+    setMobile,
     contact,
     setContact,
     hostel,
     setHostel,
     studentClass,
     setStudentClass,
-    resumption,
-    setResumption,
-    arm,
-    setArm,
+    year,
+    setYear,
+    department,
+    setDepartment,
     club,
     setClub,
     relationship,
     setRelationship,
-    nextOfkin,
+    nextofkin,
     setNextOfkin,
     subjectOffered,
     setSubjectOffered,
     handleAddStudent,
-    selectedImage,
+    avatar,
     handleSelectedImage,
     setShowAdd,
   } = useContext(TracademyContext);
@@ -51,12 +51,15 @@ function AddStudent() {
   return (
     <div className="flex justify-center mb-4 bg-white h-screen overflow-y-auto increase_height">
       <div className=" rounded-lg w-[950px] px-4 py-1">
-        <form onSubmit={handleAddStudent}>
+        <div>
           <div className="flex justify-between items-center">
             <h1 className="text-[#3527D6] font-bold">Add Student</h1>
             <button onClick={() => setShowAdd(false)}>❌</button>
           </div>
-          <div className="flex justify-between item">
+          <form
+            onSubmit={handleAddStudent}
+            className="flex justify-between item"
+          >
             <div>
               <p>Add student personal information and scores</p>
               <div>
@@ -71,15 +74,13 @@ function AddStudent() {
                   />
                   <button
                     className={`relative  ${
-                      selectedImage
-                        ? null
-                        : "border-[#3527D6] border-2 px-5 py-5"
+                      avatar ? null : "border-[#3527D6] border-2 px-5 py-5"
                     }  rounded-full `}
                     onClick={() => inputRef.current.click()}
                   >
-                    {selectedImage ? (
+                    {avatar ? (
                       <img
-                        src={selectedImage}
+                        src={avatar}
                         alt="selected_image"
                         className="rounded-full w-[100px]"
                       />
@@ -102,8 +103,8 @@ function AddStudent() {
                 <input
                   type="text"
                   className="w-full border rounded-md px-2 outline-none"
-                  value={studentName}
-                  onChange={(e) => setStudentName(e.target.value)}
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                 />
               </div>
               <div>
@@ -124,7 +125,7 @@ function AddStudent() {
                   onChange={(e) => setAddress(e.target.value)}
                 />
               </div>
-              <div className="flex gap-2 change_flex">
+              <div className="flex gap-2 change_flex justify-between">
                 <div>
                   <label className="text-[12px] font-bold">Date of birth</label>
                   <br />
@@ -141,8 +142,8 @@ function AddStudent() {
                   <input
                     type="text"
                     className="w-[250px] border rounded-md px-2 outline-none change_width"
-                    value={number}
-                    onChange={(e) => setNumber(e.target.value)}
+                    value={mobile}
+                    onChange={(e) => setMobile(e.target.value)}
                   />
                 </div>
               </div>
@@ -155,8 +156,8 @@ function AddStudent() {
                       name="gender"
                       id="female"
                       className="mx-2"
-                      value={gender === "female"}
-                      onChange={() => setGender("female")}
+                      value={gender === "Female"}
+                      onChange={() => setGender("Female")}
                     />
                     <label>Female</label>
                   </div>
@@ -166,8 +167,8 @@ function AddStudent() {
                       name="gender"
                       id="male"
                       className="mx-2"
-                      value={gender === "male"}
-                      onChange={() => setGender("male")}
+                      value={gender === "Male"}
+                      onChange={() => setGender("Male")}
                     />
                     <label>Male</label>
                   </div>
@@ -177,8 +178,8 @@ function AddStudent() {
                       name="gender"
                       id="others"
                       className="mx-2"
-                      value={gender === "others"}
-                      onChange={() => setGender("others")}
+                      value={gender === "Others"}
+                      onChange={() => setGender("Others")}
                     />
                     <label>Others</label>
                   </div>
@@ -190,8 +191,8 @@ function AddStudent() {
                     <input
                       type="text"
                       className="border w-[100px] rounded-md outline-none px-2 change_width"
-                      value={studentId}
-                      onChange={(e) => setStudentId(e.target.value)}
+                      value={id}
+                      onChange={(e) => setId(e.target.value)}
                     />
                   </div>
                   <div>
@@ -199,8 +200,8 @@ function AddStudent() {
                     <br />
                     <select
                       className="rounded-md px-2 border outline-none w-[150px] change_width"
-                      value={resumption}
-                      onChange={(e) => setResumption(e.target.value)}
+                      value={year}
+                      onChange={(e) => setYear(e.target.value)}
                     >
                       <option value={"Resumption"}>Resumption</option>
                       <option value={2018}>2018</option>
@@ -228,7 +229,7 @@ function AddStudent() {
                     </select>
                   </div>
                 </div>
-                <div className="flex gap-2 change_flex">
+                <div className="flex gap-2 change_flex justify-between">
                   <div>
                     <label>Class</label>
                     <br />
@@ -251,12 +252,13 @@ function AddStudent() {
                     <br />
                     <select
                       className="px-2 rounded-md w-[180px] border outline-none change_width"
-                      value={arm}
-                      onChange={(e) => setArm(e.target.value)}
+                      value={department}
+                      onChange={(e) => setDepartment(e.target.value)}
                     >
                       <option value={"arm"}>Arm</option>
-                      <option value={"junior"}>Junior School</option>
-                      <option value={"senior"}>Senior School</option>
+                      <option value={"Science"}>Science</option>
+                      <option value={"Art"}>Art</option>
+                      <option value={"Commercial"}>Commercial</option>
                     </select>
                   </div>
                   <div>
@@ -280,7 +282,7 @@ function AddStudent() {
                   <input
                     type="text"
                     className="w-full  rounded-md px-2 outline-none border"
-                    value={nextOfkin}
+                    value={nextofkin}
                     onChange={(e) => setNextOfkin(e.target.value)}
                   />
                 </div>
@@ -332,18 +334,13 @@ function AddStudent() {
               </div>
               <AddResultTable />
               <div className="flex flex-end my-4">
-                <button
-                  className="px-2 py-2 rounded-lg border"
-                  onClick={() => {
-                    setShowAdd(false);
-                  }}
-                >
+                <button className="px-2 py-2 rounded-lg border" type="submit">
                   Submit
                 </button>
               </div>
             </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </div>
   );

@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Adebola Badmus",
       "department": "Art",
-      "class": "SS2C",
+      "studentClass": "SS2C",
       "gender": "Male",
       "mobile": "+2349097340780",
       "email": "adebolabadmus@gmail.com",
@@ -21,7 +21,7 @@
       "id": 2,
       "name": "Abolarinwa Ibrahim",
       "department": "Science",
-      "class": "SS2C",
+      "studentClass": "SS2C",
       "gender": "Male",
       "mobile": "+2349097340780",
       "email": "abolarinwaibrahim@gmail.com",
@@ -37,7 +37,7 @@
     {
       "id": 3,
       "name": "Bolanle Aiyenitaju",
-      "class": "SS2C",
+      "studentClass": "SS2C",
       "department": "Art",
       "gender": "Male",
       "mobile": "+2349097340780",
@@ -54,7 +54,7 @@
     {
       "id": 4,
       "name": "Collins Dube",
-      "class": "SS2C",
+      "studentClass": "SS2C",
       "department": "commercial",
       "gender": "Male",
       "mobile": "+2349097340780",
@@ -71,7 +71,7 @@
     {
       "id": 5,
       "name": "Cynthia Damasus",
-      "class": "SS2C",
+      "studentClass": "SS2C",
       "department": "Art",
       "gender": "Female",
       "mobile": "+2349097340780",
@@ -88,7 +88,7 @@
     {
       "id": 6,
       "name": "Dafe Richards",
-      "class": "SS2C",
+      "studentClass": "SS2C",
       "department": "Science",
       "gender": "Male",
       "mobile": "+2349097340780",
@@ -105,7 +105,7 @@
     {
       "id": 7,
       "name": "Demilade Ojo",
-      "class": "SS2C",
+      "studentClass": "SS2C",
       "department": "commercial",
       "gender": "Male",
       "mobile": "+2349097340780",
@@ -121,7 +121,7 @@
     },
     {
       "id": 8,
-      "class": "SS2C",
+      "studentClass": "SS2C",
       "name": "Esther Momoh",
       "department": "Art",
       "gender": "Male",
@@ -138,7 +138,7 @@
     },
     {
       "id": 9,
-      "class": "SS2C",
+      "studentClass": "SS2C",
       "name": "Emmanuel  Idongesit",
       "department": "Art",
       "gender": "Male",
@@ -156,7 +156,7 @@
     {
       "id": 10,
       "name": "Emmanuel  Johnson",
-      "class": "SS2C",
+      "studentClass": "SS2C",
       "department": "Science",
       "gender": "Male",
       "mobile": "+2349097340780",
@@ -173,7 +173,7 @@
     {
       "id": 11,
       "name": "Emmanuel  Kennedy",
-      "class": "SS2C",
+      "studentClass": "SS2C",
       "department": "commercial",
       "gender": "Male",
       "mobile": "+2349097340780",
@@ -190,7 +190,7 @@
     {
       "id": 12,
       "name": "Ephraim Egbubare",
-      "class": "SS2C",
+      "studentClass": "SS2C",
       "department": "Art",
       "gender": "Male",
       "mobile": "+2349097340780",
@@ -207,7 +207,7 @@
     {
       "id": 13,
       "name": "Fayoke Daniels",
-      "class": "SS2C",
+      "studentClass": "SS2C",
       "department": "Art",
       "gender": "Male",
       "mobile": "+2349097340780",
@@ -224,7 +224,7 @@
     {
       "id": 14,
       "name": "Francis Jegede",
-      "class": "SS2C",
+      "studentClass": "SS2C",
       "department": "commercial",
       "gender": "Male",
       "mobile": "+2349097340780",
@@ -241,7 +241,7 @@
     {
       "id": 15,
       "name": "Grace Ajilore",
-      "class": "SS2C",
+      "studentClass": "SS2C",
       "department": "Science",
       "gender": "Female",
       "mobile": "+2349097340780",
@@ -258,7 +258,7 @@
     {
       "id": 16,
       "name": "Georgia Adefarasin",
-      "class": "SS2C",
+      "studentClass": "SS2C",
       "department": "Art",
       "gender": "Female",
       "mobile": "+2349097340780",
@@ -275,7 +275,7 @@
     {
       "id": 17,
       "name": "Hannatu Mutsaphar",
-      "class": "SS2C",
+      "studentClass": "SS2C",
       "department": "Art",
       "gender": "Male",
       "mobile": "+2349097340780",
@@ -292,7 +292,7 @@
     {
       "id": 18,
       "name": "Igmac Todowedo",
-      "class": "SS2C",
+      "studentClass": "SS2C",
       "department": "commercial",
       "gender": "Male",
       "mobile": "+2349097340780",
@@ -309,7 +309,7 @@
     {
       "id": 19,
       "name": "Jesutobi Olufade",
-      "class": "SS2C",
+      "studentClass": "SS2C",
       "department": "Art",
       "gender": "female",
       "mobile": "+2349097340780",
@@ -326,7 +326,7 @@
     {
       "id": 20,
       "name": "Kingsley Mogalu",
-      "class": "SS2C",
+      "studentClass": "SS2C",
       "department": "Art",
       "gender": "Male",
       "mobile": "+2349097340780",
@@ -343,7 +343,7 @@
     {
       "id": 21,
       "name": "Lesley Graham ",
-      "class": "SS2C",
+      "studentClass": "SS2C",
       "department": "Science",
       "gender": "Female",
       "mobile": "+2349097340780",
@@ -360,7 +360,7 @@
     {
       "id": 22,
       "name": "Mavis Erabor",
-      "class": "SS2C",
+      "studentClass": "SS2C",
       "department": "commercial",
       "gender": "Female",
       "mobile": "+2349097340780",
@@ -377,7 +377,7 @@
     {
       "id": 23,
       "name": "Nancy  Dube",
-      "class": "SS2C",
+      "studentClass": "SS2C",
       "department": "Art",
       "gender": "Female",
       "mobile": "+2349097340780",
@@ -394,7 +394,7 @@
     {
       "id": 24,
       "name": "Opeyemi Ishola",
-      "class": "SS2C",
+      "studentClass": "SS2C",
       "department": "Art",
       "gender": "Male",
       "mobile": "+2349097340780",
@@ -411,7 +411,7 @@
     {
       "id": 25,
       "name": "Olaoluwatomi Zen",
-      "class": "SS2C",
+      "studentClass": "SS2C",
       "department": "commercial",
       "gender": "FeMale",
       "mobile": "+2349097340780",

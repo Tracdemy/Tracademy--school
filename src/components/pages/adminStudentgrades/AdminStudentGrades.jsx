@@ -20,7 +20,7 @@ const AdminStudentsGrades = () => {
   return (
     <div className="md:mx-3 2xl:mx-10 px-2">
       <Navbar />
-      <div className="flex ">
+      <div className="flex justify-center">
         <div className="hidden xl:block">
           <Sidebar />
           <Todo />
@@ -28,7 +28,7 @@ const AdminStudentsGrades = () => {
         <div className="flex gap-3 ml-4 mb-4 change_resolution change_direction">
           <StudentComponent />
           <PersonalInformation />
-          <div className="flex flex-col gap-5 w-[420px] change_flex change-width">
+          <div className="flex flex-col gap-5 xl:w-[420px] change_flex change-width w-full">
             <Result />
             <PrincipalChart />
           </div>

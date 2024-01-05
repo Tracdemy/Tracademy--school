@@ -284,7 +284,7 @@ function Result() {
           )}
         </div>
       </div>
-      <div className="overflow-x-auto max-w-[600px]">
+      <div className="overflow-x-auto xl:max-w-[600px]">
         <table className="w-full text-[10px] md:text-[15px] my-5">
           <tr className="font-bold">
             <td>Subject</td>

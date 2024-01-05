@@ -7,7 +7,7 @@ import "./student.css";
 
 function StudentComponent() {
   const { students, handleSubmit, setShowAdd } = useContext(TracademyContext);
-  
+
   //   console.log(students[0].avatar);
   return (
     <div className="border px-4 rounded-xl py-4 change_width">
@@ -28,7 +28,11 @@ function StudentComponent() {
               className="cursor-pointer h-[30px] text-[13px]"
             >
               <td>
-                <img src={student.avatar} alt="avatars" />
+                <img
+                  src={student.avatar}
+                  alt="avatars"
+                  className="rounded-full w-[27px]"
+                />
               </td>
               <td>{student.name}</td>
               <td>{532984 + student.id}</td>

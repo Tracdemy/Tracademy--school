@@ -9,3 +9,9 @@
     width: 320px;
   }
 }
+
+@media screen and (max-width: 1077px){
+  .max_width{
+    width: 100%
+  }
+}

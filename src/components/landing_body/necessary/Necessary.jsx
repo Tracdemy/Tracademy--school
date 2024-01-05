@@ -2,7 +2,7 @@ import BoxComponent from "../../../components/box_component/BoxComponent";
 
 function Necessary() {
   return (
-    <div className="md:container md:mx-auto mx-5">
+    <div className="md:container md:mx-auto mx-5 md:px-[30px]">
       <div className="md:w-[500px] my-20">
         <h3 className="font-bold text-[30px]">
           All the necessary resources to thrive academically.

@@ -3,12 +3,13 @@ import ZigZag from "../../../assets/images/blue_zigzag.png";
 import Button from "../../../components/button/Button";
 import Line from "../../../assets/images/Line.png";
 import LightDot from "../../../assets/images/light_dot.png";
+import "./learning.css";
 
 function Learning() {
   return (
-    <div className="flex justify-between items-center love mx-5">
-      <div className="relative ml-[70px] w-[600px] mx-3 md:mx-0 good">
-        <h1 className="font-bold say">
+    <div className="flex md:flex-row flex-col justify-center md:justify-between items-center love mx-5">
+      <div className="relative md:ml-[70px] md:w-[600px] good">
+        <h1 className="font-bold say lg:text-[50px]">
           Learning made fun and easy with{" "}
           <span className="text-[#5956E9]"> Barca</span>
           <span className="flex flex-col gap-2 text-[#5956E9]">

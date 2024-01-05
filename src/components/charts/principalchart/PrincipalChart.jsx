@@ -16,14 +16,14 @@ function PrincipalChart() {
     data = Science;
   } else if (personalInfo.department === "Art") {
     data = Arts;
-  } else if (personalInfo.department === "commercial") {
+  } else if (personalInfo.department === "Commercial") {
     data = Commercial;
   } else {
-    data = [];
+    data = Science;
   }
 
   return (
-    <div className=" bg-white  border px-3 py-2 rounded-xl h-[277px]change_width">
+    <div className=" bg-white  border px-3 py-2 rounded-xl xl:h-[277px] change_width">
       <div className="flex justify-between item-center">
         <h2 className="text-[#3527D6] font-bold text-[20px]">
           {personalInfo.name}'s performance
@@ -32,7 +32,7 @@ function PrincipalChart() {
           <img src={Calender} alt="calender" />
         </div>
       </div>
-      <div>
+      <div className="flex justify-center">
         <Line
           data={{
             datasets: [

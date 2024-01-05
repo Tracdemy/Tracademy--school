@@ -9,7 +9,7 @@ import "./learningfun.css";
 function LearningFun() {
   return (
     <div className="container mx-auto px-4">
-      <div className="bg-[#F0EDFF] rounded-md my-20 pt-4 px-9 flex justify-between relative flex-col md:flex-row min-h-screen learn_fun">
+      <div className="bg-[#F0EDFF] rounded-md my-20 pt-4 px-9 flex justify-between relative flex-col md:flex-row  learn_fun">
         <div className="my-5 ">
           <h3 className="font-bold text-[20px] my-3">
             Learning should be <span className="text-[#5956E9]">fun</span> don't
@@ -26,7 +26,7 @@ function LearningFun() {
                 <button className="py-2 px-4 rounded-xl text-[white] bg-[#5956E9] mx-3 w-[150px] my-3">
                   <span className="flex items-center">
                     <img src={GooglePlay} alt="google-play" />
-                    <p className="leading-4 text-[12px] md:text-[20px]">
+                    <p className="leading-4 text-[12px] md:text-[16px] ">
                       {" "}
                       Download Google Play{" "}
                     </p>

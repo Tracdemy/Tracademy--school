@@ -12,7 +12,7 @@ function PersonalData() {
           <img
             src={personalInfo.avatar}
             alt="avatar"
-            // className="w-[58px] h-[58px]"
+            className="w-[45px] rounded-full"
           />
           <h3 className="font-bold text-[#3527D6]">{personalInfo.name}</h3>
           <p className="text-[12px]">Stud ID: {532984 + personalInfo.id}</p>
@@ -24,7 +24,7 @@ function PersonalData() {
               <tr className="h-[50px]">
                 <td>Class</td>
                 <td>:</td>
-                <td>{personalInfo.class}</td>
+                <td>{personalInfo.studentClass}</td>
               </tr>
               <tr className="h-[50px]">
                 <td>Department</td>
@@ -82,7 +82,7 @@ function PersonalData() {
         <div className="my-4">
           <h2 className="text-[#3527D6]">About Student</h2>
           <p className="text-[14px]">
-            Hello, My name is {personalInfo.name}, a {personalInfo.class}{" "}
+            Hello, My name is {personalInfo.name}, a {personalInfo.studentClass}{" "}
             student at RHS. I love history, arts and reading{" "}
           </p>
         </div>
@@ -97,7 +97,7 @@ function PersonalData() {
             <li>
               <p className="border-l border-black bg-black rounded-full inline-block w-2 h-2 mr-2"></p>
               Neatest {personalInfo.gender === "Male" ? "boy" : "girl"} in{" "}
-              {personalInfo.class}
+              {personalInfo.studentClass}
             </li>
           </ul>
         </div>

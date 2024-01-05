@@ -1,8 +1,9 @@
 import PersonalData from "./PersonalData";
+import "./personal.css";
 
 function PersonalInformation() {
   return (
-    <div>
+    <div className="max_width">
       <PersonalData />
     </div>
   );

@@ -1,5 +1,6 @@
 import { createContext, useState, useEffect } from "react";
 import Data from "../../src/data.json";
+import { toast } from "react-toastify";
 export const TracademyContext = createContext();
 
 export default function TracademyProvider({ children }) {
@@ -7,47 +8,37 @@ export default function TracademyProvider({ children }) {
   const [personalInfo, setPersonalInfo] = useState(Data.students[0] || null);
   const [teachers, setTeachers] = useState([]);
   const [teachersInfo, setTeachersInfo] = useState(Data.teachers[8] || null);
-  const [studentName, setStudentName] = useState("");
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [address, setAddress] = useState("");
-  const [number, setNumber] = useState("");
-  const [nextOfkin, setNextOfkin] = useState("");
+  const [mobile, setMobile] = useState("");
+  const [nextofkin, setNextOfkin] = useState("");
   const [relationship, setRelationship] = useState("");
   const [contact, setContact] = useState("");
-  const [resumption, setResumption] = useState("");
+  const [year, setYear] = useState("");
   const [hostel, setHostel] = useState("");
   const [studentClass, setStudentClass] = useState("");
-  const [arm, setArm] = useState("");
+  const [department, setDepartment] = useState("");
   const [club, setClub] = useState("");
   const [subjectOffered, setSubjectOffered] = useState("");
   const [session, setSession] = useState("");
   const [term, setTerm] = useState("");
   const [dateofbirth, setDateofbirth] = useState("");
   const [gender, setGender] = useState("");
-  const [studentId, setStudentId] = useState(() => {
-    const array = new Uint32Array(1);
-    window.crypto.getRandomValues(array);
-    return array[0];
+  const [id, setId] = useState(() => {
+    const min = 532984;
+    const max = 533000;
+    const array = Math.floor(Math.random() * (max - min + 1));
+    return array;
   });
   const [showAdd, setShowAdd] = useState(false);
-  const [addStudent, setAddStudent] = useState([]);
-  const [selectedImage, setSelectedImage] = useState(null);
+  // const [addStudent, setAddStudent] = useState([]);
+  const [avatar, setAvatar] = useState(null);
 
   useEffect(() => {
     setStudents(Data.students);
     setTeachers(Data.teachers);
   }, []);
-
-  const handleSelectedImage = (e) => {
-    const file = e.target.files[0];
-    if (file) {
-      const reader = new FileReader();
-      reader.onloadend = () => {
-        setSelectedImage(reader.result);
-      };
-      reader.readAsDataURL(file);
-    }
-  };
 
   const handleSubmit = (student) => {
     setPersonalInfo(student);
@@ -61,52 +52,93 @@ export default function TracademyProvider({ children }) {
     setTeachersInfo(profile);
   };
 
+  const handleSelectedImage = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setAvatar(reader.result);
+      };
+      reader.readAsDataURL(file);
+    }
+  };
+
   const handleAddStudent = (e) => {
     // console.log("handleAddStudent called");
+
+    // if (
+    //   !name ||
+    //   !email ||
+    //   !studentClass ||
+    //   !address ||
+    //   !contact ||
+    //   !mobile ||
+    //   !gender ||
+    //   !dateofbirth ||
+    //   !club ||
+    //   !id ||
+    //   !session ||
+    //   !term ||
+    //   !subjectOffered ||
+    //   !hostel ||
+    //   !department ||
+    //   !relationship ||
+    //   !nextofkin ||
+    //   !year ||
+    //   !avatar
+    // ) {
+    //   toast.error("Please fill out all the fields");
+    // }
     e.preventDefault();
     const newItems = {
-      studentName: studentName,
+      name: name,
       email: email,
       studentClass: studentClass,
       address: address,
       contact: contact,
-      number: number,
+      mobile: mobile,
       gender: gender,
       dateofbirth: dateofbirth,
       club: club,
-      studentId: studentId,
+      id: id,
       session: session,
       term: term,
       subjectOffered: subjectOffered,
       hostel: hostel,
-      arm: arm,
+      department: department,
       relationship: relationship,
-      nextOfkin: nextOfkin,
-      resumption: resumption,
-      selectedImage: selectedImage,
+      nextofkin: nextofkin,
+      year: year,
+      avatar: avatar,
     };
-    setAddStudent((prevState) => [...prevState, newItems]);
+    setStudents((prevState) => [...prevState, newItems]);
+    toast.success("You have successfully added a new student");
+    // setShowAdd(false);
     setAddress("");
-    setArm("");
+    setDepartment("");
     setClub("");
     setContact("");
     setDateofbirth("");
     setNextOfkin("");
-    setNumber("");
+    setMobile("");
     setRelationship("");
     setSession("");
     setEmail("");
     setGender("");
-    setResumption("");
-    setSelectedImage(null);
+    setYear("");
+    setAvatar(null);
     // setStudentId("");
-    setStudentName("");
+    setName("");
     setHostel("");
     setStudentClass("");
     setTerm("");
     setSubjectOffered("");
-    console.log(addStudent);
+    // console.log(addStudent);
   };
+
+  useEffect(() => {
+    console.log(students);
+  }, [students]);
   // console.log(() => handleAddStudent());
 
   // console.log(Data.teachers[0]);
@@ -123,19 +155,19 @@ export default function TracademyProvider({ children }) {
         teachersInfo,
         handleTeacherProfile,
         handleAddStudent,
-        studentName,
-        setStudentName,
+        name,
+        setName,
         studentClass,
         setStudentClass,
-        studentId,
-        setStudentId,
+        id,
+        setId,
         email,
         setEmail,
-        arm,
-        setArm,
+        department,
+        setDepartment,
         club,
         setClub,
-        nextOfkin,
+        nextofkin,
         setNextOfkin,
         contact,
         setContact,
@@ -143,12 +175,12 @@ export default function TracademyProvider({ children }) {
         setHostel,
         gender,
         setGender,
-        number,
-        setNumber,
+        mobile,
+        setMobile,
         relationship,
         setRelationship,
-        resumption,
-        setResumption,
+        year,
+        setYear,
         term,
         setTerm,
         session,
@@ -159,9 +191,9 @@ export default function TracademyProvider({ children }) {
         setAddress,
         dateofbirth,
         setDateofbirth,
-        addStudent,
+        // addStudent,
         handleSelectedImage,
-        selectedImage,
+        avatar,
         showAdd,
         setShowAdd,
       }}
