@@ -20,12 +20,12 @@ const AdminStudentsGrades = () => {
   return (
     <div className="md:mx-3 2xl:mx-10 px-2">
       <Navbar />
-      <div className="flex justify-center">
-        <div className="hidden xl:block">
-          <Sidebar />
-          <Todo />
-        </div>
-        <div className="flex gap-3 ml-4 mb-4 change_resolution change_direction">
+      <div>
+        <div className="flex justify-center 2xl:justify-between gap-3 ml-4 mb-4 change_resolution change_direction">
+          <div className="hidden xl:block">
+            <Sidebar />
+            <Todo />
+          </div>
           <StudentComponent />
           <PersonalInformation />
           <div className="flex flex-col gap-5 xl:w-[420px] change_flex change-width w-full">
@@ -34,6 +34,7 @@ const AdminStudentsGrades = () => {
           </div>
         </div>
       </div>
+
       {showAdd && (
         <div className="overlay ">
           <AddStudent />

@@ -1858,4 +1858,8 @@ video {
   .\32xl\:w-\[800px\] {
     width: 800px;
   }
+
+  .\32xl\:justify-between {
+    justify-content: space-between;
+  }
 }
