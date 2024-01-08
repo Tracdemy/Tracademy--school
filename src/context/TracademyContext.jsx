@@ -66,30 +66,31 @@ export default function TracademyProvider({ children }) {
   const handleAddStudent = (e) => {
     // console.log("handleAddStudent called");
 
-    // if (
-    //   !name ||
-    //   !email ||
-    //   !studentClass ||
-    //   !address ||
-    //   !contact ||
-    //   !mobile ||
-    //   !gender ||
-    //   !dateofbirth ||
-    //   !club ||
-    //   !id ||
-    //   !session ||
-    //   !term ||
-    //   !subjectOffered ||
-    //   !hostel ||
-    //   !department ||
-    //   !relationship ||
-    //   !nextofkin ||
-    //   !year ||
-    //   !avatar
-    // ) {
-    //   toast.error("Please fill out all the fields");
-    // }
     e.preventDefault();
+    if (
+      !name ||
+      !email ||
+      !studentClass ||
+      !address ||
+      !contact ||
+      !mobile ||
+      !gender ||
+      !dateofbirth ||
+      !club ||
+      !id ||
+      !session ||
+      !term ||
+      !subjectOffered ||
+      !hostel ||
+      !department ||
+      !relationship ||
+      !nextofkin ||
+      !year ||
+      !avatar
+    ) {
+      toast.error("Please fill out all the fields");
+      return;
+    }
     const newItems = {
       name: name,
       email: email,
@@ -111,33 +112,42 @@ export default function TracademyProvider({ children }) {
       year: year,
       avatar: avatar,
     };
-    setStudents((prevState) => [...prevState, newItems]);
-    toast.success("You have successfully added a new student");
-    // setShowAdd(false);
-    setAddress("");
-    setDepartment("");
-    setClub("");
-    setContact("");
-    setDateofbirth("");
-    setNextOfkin("");
-    setMobile("");
-    setRelationship("");
-    setSession("");
-    setEmail("");
-    setGender("");
-    setYear("");
-    setAvatar(null);
-    // setStudentId("");
-    setName("");
-    setHostel("");
-    setStudentClass("");
-    setTerm("");
-    setSubjectOffered("");
+    try {
+      setStudents((prevState) => [...prevState, newItems]);
+      toast.success("You have successfully added a new student");
+      // setShowAdd(false);
+      setAddress("");
+      setDepartment("");
+      setClub("");
+      setContact("");
+      setDateofbirth("");
+      setNextOfkin("");
+      setMobile("");
+      setRelationship("");
+      setSession("");
+      setEmail("");
+      setGender("");
+      setYear("");
+      setAvatar(null);
+      // setStudentId("");
+      setName("");
+      setHostel("");
+      setStudentClass("");
+      setTerm("");
+      setSubjectOffered("");
+    } catch (error) {
+      // throw new Error("An Error occurred");
+      toast.error("An Error occurred");
+    } finally {
+      setShowAdd(false);
+    }
+
     // console.log(addStudent);
   };
 
   useEffect(() => {
     console.log(students);
+    setShowAdd(false);
   }, [students]);
   // console.log(() => handleAddStudent());
 
@@ -194,6 +204,7 @@ export default function TracademyProvider({ children }) {
         // addStudent,
         handleSelectedImage,
         avatar,
+        setAvatar,
         showAdd,
         setShowAdd,
       }}

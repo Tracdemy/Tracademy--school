@@ -42,6 +42,7 @@ function AddStudent() {
     setSubjectOffered,
     handleAddStudent,
     avatar,
+    // setAvatar,
     handleSelectedImage,
     setShowAdd,
   } = useContext(TracademyContext);
@@ -73,6 +74,7 @@ function AddStudent() {
                     ref={inputRef}
                   />
                   <button
+                    type="button"
                     className={`relative  ${
                       avatar ? null : "border-[#3527D6] border-2 px-5 py-5"
                     }  rounded-full `}
