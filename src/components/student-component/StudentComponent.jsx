@@ -6,7 +6,8 @@ import "./student.css";
 // import Avatar from "../../assets/avatars/nancy-dube.png";
 
 function StudentComponent() {
-  const { students, handleSubmit, setShowAdd } = useContext(TracademyContext);
+  const { students, handleSubmit, setShowAdd, deleteStudent } =
+    useContext(TracademyContext);
 
   //   console.log(students[0].avatar);
   return (
@@ -37,11 +38,12 @@ function StudentComponent() {
               <td>{student.name}</td>
               <td>{532984 + student.id}</td>
               <td>{student.year}</td>
+              <td onClick={() => deleteStudent(student)}>❌</td>
             </tr>
           ))}
         </tbody>
       </table>
-      <div className="flex justify-between my-4">
+      <div className="flex justify-center my-4">
         <div className="flex items-center gap-2 mx-2 cursor-pointer">
           <button
             className="rounded-full bg-[#3527D6] text-[#D8EEBD] py-2 px-2"
@@ -51,12 +53,12 @@ function StudentComponent() {
           </button>
           <h4 className="font-bold">Add Student</h4>
         </div>
-        <div className="flex items-center gap-2 cursor-pointer">
+        {/* <div className="flex items-center gap-2 cursor-pointer">
           <button className="rounded-full bg-[#3527D6] text-[#D8EEBD] py-[14px] px-2">
             <img src={Minus} alt="minus" />
           </button>
           <h4 className="font-bold">Remove Student</h4>
-        </div>
+        </div> */}
       </div>
     </div>
   );

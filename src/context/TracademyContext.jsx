@@ -4,6 +4,8 @@ import { toast } from "react-toastify";
 export const TracademyContext = createContext();
 
 export default function TracademyProvider({ children }) {
+  // using local storage
+
   const [students, setStudents] = useState([]);
   const [personalInfo, setPersonalInfo] = useState(Data.students[0] || null);
   const [teachers, setTeachers] = useState([]);
@@ -145,14 +147,29 @@ export default function TracademyProvider({ children }) {
     // console.log(addStudent);
   };
 
-  useEffect(() => {
-    console.log(students);
-    setShowAdd(false);
-  }, [students]);
+  // useEffect(() => {
+  //   console.log(students);
+  //   setShowAdd(false);
+  // }, [students]);
   // console.log(() => handleAddStudent());
 
   // console.log(Data.teachers[0]);
   // console.log(teachersInfo);
+
+  const deleteStudent = (person) => {
+    const confirm = window.confirm(
+      "Are you sure you want to delete this student"
+    );
+    if (confirm) {
+      setStudents((prevState) => {
+        const updatedStudent = prevState.filter(
+          (student) => student.id !== person.id
+        );
+        setPersonalInfo(updatedStudent[0]);
+        return updatedStudent;
+      });
+    }
+  };
 
   return (
     <TracademyContext.Provider
@@ -207,6 +224,7 @@ export default function TracademyProvider({ children }) {
         setAvatar,
         showAdd,
         setShowAdd,
+        deleteStudent,
       }}
     >
       {children}
