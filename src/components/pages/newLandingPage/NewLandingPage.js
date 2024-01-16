@@ -17,15 +17,15 @@ const NewLandingPage = () => {
         </div>
         <div className="startsHere flex items-start justify-between">
           <div className="flex flex-col items-center justify-between">
-            <Link className="starts">Starts Here</Link>
+            <Link to="/sign" className="starts">Starts Here</Link>
             <img src={image2} alt="img" className="" />
           </div>
           <div className="flex flex-col items-center">
             <img src={logo} alt="img" className="logo" />
             <div className="flex flex-col">
               <div className="btnsFlex flex items-b justify-between">
-                <button className="btns px-5 rounded-lg" id="btns1">Sign In</button>
-                <button className="btns px-5 rounded-lg" id="btns2">Sign Up</button>
+                <Link to="/sign" className="btns px-5 rounded-lg" id="btns1">Sign In</Link>
+                <Link to="/sign" className="btns px-5 rounded-lg" id="btns2">Sign Up</Link>
               </div>
             </div>
           </div>
