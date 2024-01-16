@@ -1,0 +1,43 @@
+.newLandingPage-wrapper {
+  background-color: #3527d6;
+  border-radius: 8px;
+  margin: 20px;
+  color: #fbfeff;
+  padding: 20px;
+  padding-top: 80px;
+}
+.schools-option {
+  font-size: 48px;
+}
+.schools {
+  background-color: #d8eebd;
+  border-radius: 10px;
+  color: #3527d6;
+  padding: 0 10px;
+}
+.schools-management {
+  color: #fbfeff;
+  font-size: 48px;
+  font-weight: 700;
+}
+.startsHere {
+  margin-top: -100px;
+}
+.starts {
+  color: #fbfeff;
+  margin-right: -40%;
+  font-size: 48px;
+}
+.logo {
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+.btnsFlex {
+  margin-top: 40px;
+}
+.btns {
+  background-color: #fff;
+  color: #3527d6;
+  font-weight: 500;
+  font-size: 36px;
+}
