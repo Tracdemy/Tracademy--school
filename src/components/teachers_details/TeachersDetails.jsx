@@ -8,11 +8,12 @@ import FolderShared from "../../assets/svg/folder_svg.svg";
 import { useContext } from "react";
 import { TracademyContext } from "../../context/TracademyContext";
 
-function TeachersDetails() {
+function TeachersDetails(props) {
   const { teachersInfo } = useContext(TracademyContext);
+  const {showDialog} = props
   //   console.log(teachersInfo);
   return (
-    <div className="py-3 px-3 rounded shadow about_teacher change_width">
+    <div className="py-3 px-3 rounded shadow change_width about_teacher" style={{display: showDialog===false?"none":""}}>
       <div className="flex flex-col justify-center items-center my-5">
         <img
           src={`${teachersInfo.avatar}`}

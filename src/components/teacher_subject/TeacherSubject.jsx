@@ -2,10 +2,11 @@ import { useContext } from "react";
 import { TracademyContext } from "../../context/TracademyContext";
 import "./teachersubject.css";
 
-function TeacherSubject() {
+function TeacherSubject(props) {
   const { teachers, handleTeacher } = useContext(TracademyContext);
+  const {showDialog} = props
   return (
-    <div className="shadow border rounded-md px-2 py-3">
+    <div className="shadow border rounded-md px-2 py-3" style={{width: showDialog===false?"600px":""}}>
       <table>
         <tr>
           <td></td>

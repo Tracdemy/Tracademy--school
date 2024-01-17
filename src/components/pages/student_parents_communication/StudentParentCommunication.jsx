@@ -22,9 +22,9 @@ function StudentParentCommunication() {
           <Todo />
         </div>
         <div className="flex gap-4 my-3 change_flex">
-          <TeacherSubject />
-          <Chat handleShowState={handleShowState} />
-          {showDialog && <TeachersDetails />}
+          <TeacherSubject showDialog={showDialog}/>
+          <Chat handleShowState={handleShowState} showDialog={showDialog}/>
+          <TeachersDetails showDialog={showDialog}/>
         </div>
       </div>
 
