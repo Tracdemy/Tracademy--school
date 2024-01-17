@@ -16,14 +16,14 @@ const AdminSignInPage = () => {
   const [error, setError] = useState("")
   
   const handleGoogleSignIn = async () => {
+    setError(null);
     const auth = getAuth();
     await signInWithPopup(auth, provider)
-    signInWithPopup(auth, provider)
       .then((result) => {
         const user = result.user;
-        console.log("User signed in:", user);
-        navigate("/admin-dashboard")
-      })
+        //Updating userContext
+        navigate("/student-dashboard")
+        })
       .catch((error) => {
         // Handle sign-in errors
         console.error("Error signing in:", error);

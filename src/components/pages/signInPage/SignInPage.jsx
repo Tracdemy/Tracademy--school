@@ -15,14 +15,14 @@ const SignInPage = () => {
   //States
   const [error, setError] = useState("")
   const handleGoogleSignIn = async () => {
+    setError(null);
     const auth = getAuth();
     await signInWithPopup(auth, provider)
-    signInWithPopup(auth, provider)
       .then((result) => {
         const user = result.user;
-        console.log("User signed in:", user);
+        //Updating userContext
         navigate("/student-dashboard")
-      })
+        })
       .catch((error) => {
         // Handle sign-in errors
         console.error("Error signing in:", error);
@@ -34,7 +34,6 @@ const SignInPage = () => {
     <div className="signUpPage-wrapper">
       <div className="signUpPage-flex_row">
         <div className="left-content">
-       
           <img src={logoImg} alt="logo" className="signUp-logo" />
           <h2 className="signUpPage-title">Welcome back</h2>
           <p className="signUpPage-details">Please enter your details</p>
