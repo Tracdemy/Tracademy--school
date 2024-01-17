@@ -16,7 +16,7 @@ function ChatComponent() {
         />
         <ChatBox description="I'm messaging you to inform you that Doyin won't be in school for a week" />
       </div>
-      <div className="relative ml-[40px]">
+      <div className="relative ml-[40px] flex justify-end">
         <div className="absolute top-[-26px] right-[-24px]">
           <PictureComponent image={`${teachersInfo.avatar}`} />
         </div>
@@ -28,12 +28,12 @@ function ChatComponent() {
         </div>
         <ChatBox description="After school yesterday, Doyin went to play with her friends for a bit . On her way back , she she fell and had a fracture. We had to rush her to the hospital for treatment as she was in severe pain. She has been admitted and the doctor says that she might have to be in the hospital for about a week . We will keep you posted with her improvement and information on when she can come back to school. Thanks you Ma." />
       </div>
-      <div className="flex items-center">
+      <div className="flex items-center justify-center">
         <span className="mb-[14px] text-[#FFFFFF]">____________</span>
         <h3 className="mx-2">Today</h3>
         <span className="mb-[14px] text-[#FFFFFF]">____________</span>
       </div>
-      <div className="relative ml-[40px] my-3">
+      <div className="relative ml-[40px] my-3 flex justify-end">
         <div className="absolute top-[-26px] right-[-24px]">
           <PictureComponent image={`${teachersInfo.avatar}`} />
         </div>

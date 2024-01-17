@@ -1,5 +1,5 @@
 .about_teacher {
-  width: 270px;
+  width: 306px;
 }
 .teacher_image {
   width: 44px;
@@ -29,5 +29,11 @@
   }
   .change_flex {
     justify-content: center;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .image_width {
+    width: 100%;
   }
 }

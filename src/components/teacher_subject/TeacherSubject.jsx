@@ -4,9 +4,12 @@ import "./teachersubject.css";
 
 function TeacherSubject(props) {
   const { teachers, handleTeacher } = useContext(TracademyContext);
-  const {showDialog} = props
+  const { showDialog } = props;
   return (
-    <div className="shadow border rounded-md px-2 py-3" style={{width: showDialog===false?"600px":""}}>
+    <div
+      className="shadow border rounded-md px-2 py-3"
+      style={{ width: showDialog === false ? "100%" : "" }}
+    >
       <table>
         <tr>
           <td></td>

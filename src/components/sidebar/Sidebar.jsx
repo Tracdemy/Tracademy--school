@@ -18,7 +18,7 @@ const sidebarLinks = [
   { to: "#", text: "Performance", icon: Performance },
   { to: "#", text: "Extracurricular", icon: Extracurricular },
   { to: "/studentgrades", text: "Student grades", icon: studentGrades },
-  { to: "#", text: "Subjects", icon: Subject },
+  { to: "/student-subject", text: "Subjects", icon: Subject },
   { to: "/admin-parentcommunication", text: "Parents", icon: Parents },
   { to: "#", text: "Teachers", icon: Teachers },
   { to: "#", text: "Finance", icon: Finance },

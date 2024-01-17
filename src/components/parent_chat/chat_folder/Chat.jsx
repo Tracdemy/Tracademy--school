@@ -10,7 +10,10 @@ function Chat({ handleShowState, showDialog }) {
   const { teachersInfo } = useContext(TracademyContext);
   console.log(teachersInfo);
   return (
-    <div className="bg-[#F2F3FF] border rounded-md pb-2 relative wrapper" style={{width: showDialog===false?"100%":""}}>
+    <div
+      className="bg-[#F2F3FF] border rounded-md pb-2 relative px-3"
+      style={{ width: showDialog === false ? "100%" : "" }}
+    >
       <div className="bg-white text-[#3527D6] rounded flex justify-between px-4 py-3 ">
         <div
           className="flex items-center gap-2 cursor-pointer"

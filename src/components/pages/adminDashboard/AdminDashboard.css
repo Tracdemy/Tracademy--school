@@ -32,8 +32,8 @@
   }
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 375px) {
   .width_full {
-    width: 351px;
+    width: 351px !important;
   }
 }

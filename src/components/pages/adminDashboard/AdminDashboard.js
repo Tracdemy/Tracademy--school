@@ -16,7 +16,7 @@ import AdminLogout from "../../logout/AdminLogout.jsx";
 const AdminDashboard = (props) => {
   const { user } = props;
   return (
-    <div className="mx-3 md:mx-10 width_full">
+    <div className=" px-[13px] md:px-10 width_full ">
       <Navbar />
       <div className="flex justify-between change_content width_full">
         <div className="hidden xl:block">
