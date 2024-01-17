@@ -14,12 +14,11 @@ import SchoolFinance from "../../charts/SchoolFinance.jsx";
 import TeachersList from "../../teachers_list/TeachersList.jsx";
 import AdminLogout from "../../logout/AdminLogout.jsx";
 const AdminDashboard = (props) => {
-
-  const {user} = props
+  const { user } = props;
   return (
-    <div className="mx-3 md:mx-10">
+    <div className="mx-3 md:mx-10 width_full">
       <Navbar />
-      <div className="flex justify-between change_content">
+      <div className="flex justify-between change_content width_full">
         <div className="hidden xl:block">
           <Sidebar />
         </div>
@@ -87,7 +86,7 @@ const AdminDashboard = (props) => {
           <Events />
         </div>
       </div>
-      <div className="flex justify-between my-4 gap-3 flex-wrap">
+      <div className="flex justify-between my-4 gap-3 flex-wrap width_full">
         <div className="hidden xl:block">
           <Todo />
         </div>
@@ -96,7 +95,7 @@ const AdminDashboard = (props) => {
       </div>
       <div className="flex gap-3">
         <div className="hidden xl:block">
-          <AdminLogout user={user}/>
+          <AdminLogout user={user} />
         </div>
         <Footer />
       </div>

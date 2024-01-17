@@ -5,7 +5,7 @@ import "./teachers.css";
 function TeachersList() {
   const { teachers } = useContext(TracademyContext);
   return (
-    <div className=" shadow rounded-md border px-5 py-3 ">
+    <div className=" shadow rounded-md border px-5 py-3 width_full">
       <div className="custom-scrollbar overflow-scroll overflow-x-hidden w-[400px] h-[390px] change_width">
         <h2 className="font-bold">Teachers List</h2>
         <div className="text-[12px]">

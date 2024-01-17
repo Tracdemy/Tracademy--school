@@ -1,7 +1,7 @@
 import Calender from "../../assets/svg/solar_calendar-bold.svg";
 import { Chart as ChartJS } from "chart.js/auto";
 import { Line } from "react-chartjs-2";
-import "./school.css"
+import "./school.css";
 
 function SchoolPerformance() {
   return (

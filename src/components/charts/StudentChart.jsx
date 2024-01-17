@@ -3,7 +3,7 @@ import { Doughnut } from "react-chartjs-2";
 
 function StudentChart() {
   return (
-    <div className="border shadow px-4 py-2 rounded-md">
+    <div className="border shadow px-4 py-2 rounded-md width_full">
       <div className="flex justify-between">
         <h3 className="font-bold">Students</h3>
         <select className="outline-none">

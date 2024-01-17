@@ -930,10 +930,6 @@ video {
   width: 320px;
 }
 
-.w-\[350px\] {
-  width: 350px;
-}
-
 .w-\[354px\] {
   width: 354px;
 }
@@ -1035,6 +1031,14 @@ video {
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.items-end {
+  align-items: flex-end;
 }
 
 .items-center {
