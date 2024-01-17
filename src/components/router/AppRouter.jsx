@@ -8,6 +8,8 @@ import AdminSignInPage from "../pages/adminSignIn/AdminSignInPage";
 import AdminStudentsGrades from "../pages/adminStudentgrades/AdminStudentGrades";
 import ParentCommunication from "../pages/parents_communication/ParentCommunication";
 import NewLandingPage from "../pages/newLandingPage/NewLandingPage";
+import ParentStudentGrades from "../pages/parentStudentgrades/ParentStudentGrades";
+import StudentParentCommunication from "../pages/student_parents_communication/StudentParentCommunication";
 const AppRouter = () => {
   return (
     <div className="appRouter">
@@ -19,9 +21,14 @@ const AppRouter = () => {
         <Route path="/admin-sign-in" element={<AdminSignInPage />} />
         <Route path="/admin-dashboard" element={<AdminDashboard />} />
         <Route path="/studentgrades" element={<AdminStudentsGrades />} />
+        <Route path="/parent-studentgrades" element={<ParentStudentGrades />} />
         <Route
           path="/admin-parentcommunication"
           element={<ParentCommunication />}
+        />
+        <Route
+          path="/student-parentcommunication"
+          element={<StudentParentCommunication />}
         />
       </Routes>
     </div>
