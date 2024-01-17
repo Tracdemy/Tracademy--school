@@ -22,7 +22,7 @@ const AdminSignInPage = () => {
       .then((result) => {
         const user = result.user;
         //Updating userContext
-        navigate("/student-dashboard")
+        navigate("/admin-dashboard")
         })
       .catch((error) => {
         // Handle sign-in errors
@@ -50,7 +50,7 @@ const AdminSignInPage = () => {
           </label>
           <p className="signIn">
             Are you a Student?{" "}
-            <Link to="/" className="signUpPage-sign_btn">
+            <Link to="/sign" className="signUpPage-sign_btn">
               Sign In
             </Link>
           </p>
