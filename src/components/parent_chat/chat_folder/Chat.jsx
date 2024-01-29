@@ -8,7 +8,7 @@ import "./chat.css";
 
 function Chat({ handleShowState, showDialog }) {
   const { teachersInfo } = useContext(TracademyContext);
-  console.log(teachersInfo);
+  // console.log(teachersInfo);
   return (
     <div
       className="bg-[#F2F3FF] border rounded-md pb-2 relative px-3"

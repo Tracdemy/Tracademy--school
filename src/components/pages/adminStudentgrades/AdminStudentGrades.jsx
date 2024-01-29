@@ -14,12 +14,12 @@ import { useContext } from "react";
 import { TracademyContext } from "../../../context/TracademyContext.jsx";
 import AddStudent from "../../addstudent/AddStudent.jsx";
 
-const AdminStudentsGrades = () => {
+const AdminStudentsGrades = ({ user }) => {
   const { showAdd } = useContext(TracademyContext);
 
   return (
     <div className="md:mx-3 2xl:mx-10 px-2">
-      <Navbar />
+      <Navbar user={user} />
       <div>
         <div className="flex justify-center 2xl:justify-between gap-3 ml-4 mb-4 change_resolution change_direction">
           <div className="hidden xl:block">

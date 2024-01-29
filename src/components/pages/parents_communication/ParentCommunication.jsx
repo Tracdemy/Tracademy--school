@@ -9,14 +9,14 @@ import TeachersDetails from "../../teachers_details/TeachersDetails";
 import { useState } from "react";
 import "./parent.css";
 
-function ParentCommunication() {
+function ParentCommunication({user}) {
   const [showDialog, setShowDialog] = useState(false);
   const handleShowState = () => {
     setShowDialog(!showDialog);
   };
   return (
     <div className="mx-3 md:mx-10">
-      <Navbar />
+      <Navbar user={user}/>
       <div className="flex justify-between">
         <div className="hidden xl:block">
           <Sidebar />

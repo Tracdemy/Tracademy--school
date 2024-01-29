@@ -13,11 +13,12 @@ import SchoolPerformance from "../../charts/SchoolPerformance.jsx";
 import SchoolFinance from "../../charts/SchoolFinance.jsx";
 import TeachersList from "../../teachers_list/TeachersList.jsx";
 import AdminLogout from "../../logout/AdminLogout.jsx";
-const AdminDashboard = (props) => {
-  const { user } = props;
+const AdminDashboard = ({ user }) => {
+  // console.log(user.photoURL);
+  // const { user } = props;
   return (
     <div className=" px-[13px] md:px-10 width_full ">
-      <Navbar />
+      <Navbar user={user} />
       <div className="flex justify-between change_content width_full">
         <div className="hidden xl:block">
           <Sidebar />

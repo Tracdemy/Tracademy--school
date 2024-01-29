@@ -12,7 +12,7 @@ import Logout from "../studentLogout/Logout.jsx";
 
 // import logoImg from "./assets/Group 67.png";
 
-function Navbar({ user }) {
+function StudentNavbar({ user }) {
   const [searchBar, setSearchBar] = useState("");
   const [showNavbar, setShowNavbar] = useState(false);
 
@@ -152,4 +152,4 @@ function Navbar({ user }) {
   );
 }
 
-export default Navbar;
+export default StudentNavbar;

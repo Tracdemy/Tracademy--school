@@ -778,6 +778,14 @@ video {
   margin-top: 1.25rem;
 }
 
+.ml-\[50px\] {
+  margin-left: 50px;
+}
+
+.ml-\[30px\] {
+  margin-left: 30px;
+}
+
 .block {
   display: block;
 }
@@ -856,6 +864,10 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-10 {
+  height: 2.5rem;
 }
 
 .max-h-\[32px\] {
@@ -972,6 +984,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .min-w-fit {
@@ -1091,6 +1107,10 @@ video {
 
 .gap-\[60px\] {
   gap: 60px;
+}
+
+.gap-\[10px\] {
+  gap: 10px;
 }
 
 .overflow-auto {

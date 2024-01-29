@@ -13,17 +13,21 @@ import Result from "../../result/Result.jsx";
 import SubjectTaken from "../../subjects_taken/SubjectTaken.jsx";
 import PerformanceComponent from "../../performance-component/PerformanceComponent.jsx";
 import "./studentsubject.css";
+import StudentNavbar from "../../navbar/StudentNavbar.jsx";
+import StudentLogOut from "../../logout/StudentLogOut.jsx";
 
 // import StudentComponent from "../../student-component/StudentComponent.jsx";
-function StudentSubject() {
+function StudentSubject({ user }) {
   return (
     <div className="lg:mx-3 my-2">
-      <Navbar />
+      {/* <Navbar /> */}
+      <StudentNavbar user={user} />
       <div className="flex flex-col items-center lg:flex-row justify-between gap-2">
         <div className="hidden xl:block">
           <Sidebar />
           <NoticeBar />
-          <Logout />
+          {/* <Logout user={user}/> */}
+          <StudentLogOut user={user} />
         </div>
 
         <div className="overview md:w-[750px] 2xl:w-[800px] mx-5">

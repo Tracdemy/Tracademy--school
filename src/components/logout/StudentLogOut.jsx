@@ -1,17 +1,19 @@
-import { getAuth, signOut } from "firebase/auth";
-import LogoutImage from "../../assets/svg/logout.svg";
 import { useNavigate } from "react-router-dom";
-function Logout({ user }) {
+import LogoutImage from "../../assets/svg/logout.svg";
+import { getAuth, signOut } from "firebase/auth";
+function StudentLogOut({ user }) {
   // console.log(user);
-  // const { user } = props;
+  //Navigate
   const navigate = useNavigate();
-  //Handle student signout
+  // const { user } = user;
+  //Handle admin signout
+  // console.log(props);
   const handleStudentSignout = () => {
     const auth = getAuth();
     signOut(auth)
       .then(() => {
         navigate("/");
-        // console.log("out");
+        // console.log("Out");
       })
       .catch((error) => {
         // An error happened.
@@ -19,15 +21,15 @@ function Logout({ user }) {
   };
   return (
     <div className="py-5 px-2 bg-[#3527D6] text-white w-[234px] my-5 rounded-2xl">
-      <div className="flex gap-3 items-center">
+      <div className="flex gap-3">
         <img
-          src={user?.photoURL}
+          src={`${user?.photoURL}`}
           alt="principal"
           className="w-10 h-10 rounded-full"
         />
         <div className="leading-[16px] ml-[30px]">
           <h2>{user?.displayName}</h2>
-          <p>Principal</p>
+          <p>Student</p>
         </div>
       </div>
       <div className="flex justify-center my-2">
@@ -41,4 +43,4 @@ function Logout({ user }) {
     </div>
   );
 }
-export default Logout;
+export default StudentLogOut;
