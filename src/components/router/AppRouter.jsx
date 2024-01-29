@@ -7,15 +7,15 @@ import AdminDashboard from "../pages/adminDashboard/AdminDashboard";
 import AdminSignInPage from "../pages/adminSignIn/AdminSignInPage";
 import AdminStudentsGrades from "../pages/adminStudentgrades/AdminStudentGrades";
 import ParentCommunication from "../pages/parents_communication/ParentCommunication";
-import NewLandingPage from "../pages/newLandingPage/NewLandingPage";
+// import NewLandingPage from "../pages/newLandingPage/NewLandingPage";
 import ParentStudentGrades from "../pages/parentStudentgrades/ParentStudentGrades";
 import StudentParentCommunication from "../pages/student_parents_communication/StudentParentCommunication";
 const AppRouter = () => {
   return (
     <div className="appRouter">
       <Routes>
-        <Route path="/" element={<NewLandingPage />} />
-        <Route exact path="/sign" element={<Home />} />
+        {/* <Route path="/" element={<NewLandingPage />} /> */}
+        <Route exact path="/" element={<Home />} />
         <Route path="/student-dashboard" element={<StudentDashboard />} />
         <Route path="/student-subject" element={<StudentSubject />} />
         <Route path="/admin-sign-in" element={<AdminSignInPage />} />

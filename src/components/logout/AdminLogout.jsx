@@ -6,7 +6,7 @@ function AdminLogout(props) {
   const navigate = useNavigate();
   const { user } = props;
   //Handle admin signout
-
+  console.log(props);
   const handleAdminSignout = () => {
     const auth = getAuth();
     signOut(auth)
