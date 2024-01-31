@@ -57,7 +57,7 @@ const AdminSignInPage = () => {
       <div className="right-content">
         <div className="right-content-inner">
           <h2 className="right-content-title1">
-            Your <span className="schoolRecords">School records</span>
+            Your <span className="schoolRecords">School's records</span>
           </h2>
           <p className="right-content-title2">
             All in <span className="onePlace">one place</span>
